@@ -1,6 +1,9 @@
 #include "Pokemon.h"
 
-Pokemon::Pokemon(std::string name, std::string type, int HP, int attack, int defense, Move moves[4]) {
+#include <string>
+
+Pokemon::Pokemon(std::string name, std::string type, int HP, int attack,
+                 int defense, std::string moves[4]) {
   this->name = name;
   this->type = type;
   this->HP = HP;
@@ -15,10 +18,10 @@ std::string Pokemon::getType() { return type; }
 int Pokemon::getHP() { return HP; }
 int Pokemon::getAttack() { return attack; }
 int Pokemon::getDefense() { return defense; }
-Move Pokemon::getMove(int i) { return moves[i]; }
+std::string Pokemon::getMove(int i) { return moves[i]; }
 void Pokemon::setName(std::string name) { this->name = name; }
 void Pokemon::setType(std::string type) { this->type = type; }
 void Pokemon::setHP(int HP) { this->HP = HP; }
 void Pokemon::setAttack(int attack) { this->attack = attack; }
 void Pokemon::setDefense(int defense) { this->defense = defense; }
-void Pokemon::setMove(int i, Move move) { this->moves[i] = move; }
+void Pokemon::setMove(int i, std::string move) { this->moves[i] = move; }

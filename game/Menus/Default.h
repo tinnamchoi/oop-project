@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "Menu.h"
+#include "../Menu.h"
 
 // inherit class from Menu.h
 

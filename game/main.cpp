@@ -18,7 +18,7 @@ int main() {
   save.open("save.csv", ios::in);
   vector<Pokemon> team;
   string line, name, type, HP, attack, defense;
-  Move moves[4];
+  string moves[4];
   for (int i = 0; i < 6; i++) {
     getline(save, line);
     std::stringstream s(line);
@@ -39,12 +39,16 @@ int main() {
   // print out team
   for (int i = 0; i < 4; i++) {
     cout << "Name, type, HP, attack, defense, moves 1-4" << endl
-         << team[i].getName() << ", " << team[i].getType() << endl;
+         << team[i].getName() << ", " << team[i].getType() << ", " << team[i].getHP() << ", " << team[i].getAttack() << ", " << team[i].getDefense() << ", " << team[i].getMove(0) << ", " << team[i].getMove(1) << ", " << team[i].getMove(2) << ", " << team[i].getMove(3) << endl;
   }
+
+  // create menu
+  
 
   // game loop
   while (true) {
     // print menu using menu class
+    cout << 
 
     // play again?
     char playAgain;
