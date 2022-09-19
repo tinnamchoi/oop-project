@@ -1,2 +1,2 @@
 make:
-	g++ *.cpp Menus/*.cpp
+	g++ *.cpp

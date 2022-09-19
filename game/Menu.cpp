@@ -4,6 +4,7 @@
 
 using namespace std;
 
+Menu::Menu() {}
 Menu::Menu(std::string title, std::string options[], int numOptions) {
   this->title = title;
   for (int i = 0; i < numOptions; i++) {
@@ -17,7 +18,7 @@ int Menu::getNumOptions() { return numOptions; }
 void Menu::setTitle(std::string title) { this->title = title; }
 void Menu::setOption(int index, std::string option) { options[index] = option; }
 void Menu::setNumOptions(int numOptions) { this->numOptions = numOptions; }
-void Menu::printOptions() {
+void Menu::printMenu() {
   std::cout << title << std::endl;
   for (int i = 0; i < numOptions; i++) {
     std::cout << i + 1 << ". " << options[i] << std::endl;
