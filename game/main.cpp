@@ -7,7 +7,6 @@
 #include "Menu.h"
 #include "Move.h"
 #include "Pokemon.h"
-#include "Menus/Default.h"
 
 using namespace std;
 
@@ -43,12 +42,12 @@ int main() {
   }
 
   // create menu
-  
+  Menu menu = Menu();
 
   // game loop
   while (true) {
     // print menu using menu class
-    cout << 
+    menu.printMenu();
 
     // play again?
     char playAgain;
