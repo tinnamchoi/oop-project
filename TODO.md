@@ -5,7 +5,7 @@
 - [x] Each identified class has a list of potential data and function members. (3 points)
 - [x] The relationships between the identified classes are identified correctly. (5 points)
 - [x] The project is broken down into tasks and has a timeline of execution (3 points)
-- [ ] A description of the user interface and how the user will interact with the program (2 points)
+- [x] A description of the user interface and how the user will interact with the program (2 points)
 - [ ] A plan for unit testing and debugging (2 points)	
 
 # Project Execution 100 points - (80% of Project's final grade)	
