@@ -16,8 +16,8 @@ class Menu {
   void printMenu();
 
  private:
-  std::string title = "Default Menu";
-  std::string options[4] = {"Attack", "Bag", "Pokemon", "Run"};
+  std::string title = "Menu title";
+  std::string options[4] = {"Option 1", "Option 2", "Option 3", "Option 4"};
   int numOptions = 4;
 };
 
