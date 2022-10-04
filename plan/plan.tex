@@ -4,6 +4,9 @@
 \usepackage{lipsum}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{multicol}
+
+\setlength{\columnsep}{3em}
 
 \title{Project plan}
 \author{Darcy Geyer, Sarah McCauley, Tin Nam Choi}
@@ -66,71 +69,92 @@
 
   \section{Potential classes}
   
-  \subsection{Player}
-  Data: 
-  \begin{itemize}
-    \item Pokemon owned
-    \item Level 
-  \end{itemize}
-  Functions:
-  \begin{itemize}
-    \item Add/remove Pokemon owned
-    \item Increment/decrement level
-  \end{itemize}
+  \setlength{\parskip}{0em}
   
-  \subsubsection{Person}
-  Data:
-  \begin{itemize}
-    \item Name
-    \item Skill points (for leveling up)
-  \end{itemize}
-  Functions:
-  \begin{itemize}
-    \item Set name
-    \item Increment/decrement skill points
-    \item Get action from user
-  \end{itemize}
-  
-  \subsubsection{Computer}
-  Functions:
-  \begin{itemize}
-    \item Get action randomly
-  \end{itemize}
+  \begin{multicols}{2}
+    \subsection{Player}
+    Data: 
+    \begin{itemize}
+      \item Pokemon owned
+    \end{itemize}
+    Functions:
+    \begin{itemize}
+      \item Add/remove Pokemon owned
+      \item Move (to allow for a person/cpu to make their move - attack/defend/special attack/defense move/etc)
+    \end{itemize}
     
-  \subsection{Pokemon}
-  Data:
-  \begin{itemize}
-    \item Name
-    \item Type
-    \item Level
-    \item Health
-    \item Attack
-    \item Defense
-    \item Speed
-    \item Moves learnt
-  \end{itemize}
-  Functions:
-  \begin{itemize}
-    \item Increment/decrement level
-    \item Increment/decrement health
-    \item Increment/decrement attack
-    \item Increment/decrement defense
-    \item Increment/decrement speed
-    \item Add/remove moves learnt
-  \end{itemize}
-  
-  \subsection{Menu}
-  Data:
-  \begin{itemize}
-    \item Title
-    \item Options (vector)
-  \end{itemize}
-  Functions:
-  \begin{itemize}
-    \item Print menu
-    \item Set title
-    \item Set options
-  \end{itemize}
+    \subsubsection{Person}
+    Data:
+    \begin{itemize}
+      \item Name
+      \item Move
+      \item Pokemon defeated
+      \item Skill points (for leveling up)
+    \end{itemize}
+    Functions:
+    \begin{itemize}
+      \item Set name
+      \item Get move (get move from player class)
+      \item winAction (determining successful or unsuccessful action)
+      \item winPokemon (determine if opponent pokemon is defeated)
+      \item winBattle (determine if battle has been won)
+    \end{itemize}
+    
+    \subsubsection{Computer}
+    Data:
+    \begin{itemize}
+      \item Move
+    \end{itemize}
+    Functions:
+    \begin{itemize}
+      \item Move (randomize an action)
+    \end{itemize}
+      
+    \subsection{Pokemon}
+    Data:
+    \begin{itemize}
+      \item Level
+    \end{itemize}
+    Functions:
+    \begin{itemize}
+      \item printInfo
+      \item getName
+      \item getType
+      \item getHealth
+      \item getLevel
+    \end{itemize}
+    
+    \subsubsection{Pokemon 1 through 6}
+    Data:
+      \begin{itemize}
+        \item Name
+        \item Type
+        \item Level
+        \item Attack
+        \item Special Attack
+        \item Defense
+        \item Special Defense
+        \item Moves Learned
+      \end{itemize}
+    Function:
+      \begin{itemize}
+        \item levelUp - increases strength of all actions
+        \item add/remove moves learned
+      \end{itemize}
+    
+    \subsection{Menu}
+    Data:
+    \begin{itemize}
+      \item Title
+      \item Options (vector)
+    \end{itemize}
+    Functions:
+    \begin{itemize}
+      \item Print menu
+      \item Set title
+      \item Set options
+    \end{itemize}
+    \end{multicols}
   
   \pagebreak
   
@@ -155,17 +179,24 @@
   
   \subsection*{Week 11}
   \begin{itemize}
+    \item Edge cases testing
     \item Finish coding
   \end{itemize}
-  
-  \pagebreak
-  
+    
+  \setlength{\parindent}{0em}
+  \setlength{\parskip}{1em}
+
   \section{User interface}
   
-  The game will use a command-line interface. This will be done using the Menu class to display the options to the user, and the user will be able to select an option by typing the corresponding number. 
+  The game will use a command-line interface. This will be done using the Menu class to display the options to the user, and the user will be able to select an option by typing the corresponding number. \par 
+  There will be different options depending on the scenario. For example, during the beginning of the game, the player will be given six Pokemon to choose three from, and during battle, the player will be able to choose from Attack, Defense, and Special attack. 
   
   \begin{center}\includegraphics[height=2cm]{media/Menu.png}\end{center}
   
   \section{Unit testing and debugging}
+  
+  There will be a test log, which will be updated as the project progresses. \par
+  We will utilize makefiles to run driver programs to test the classes and also to compile the program. \par 
+  Comprehensive testing on edge cases will be done to ensure that the program is robust. 
     
 \end{document}
