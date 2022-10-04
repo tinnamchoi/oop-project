@@ -21,27 +21,48 @@ void Menu::setNumOptions(int numOptions) { this->numOptions = numOptions; }
 
 /* Menu format 
 
-== Title ==
------------------------------
-| 1. Option 1 | 2. Option 2 |
-| 3. Option 3 | 4. Option 4 |
------------------------------
+============== Title ==============
+-----------------------------------
+| 1. Option 1    | 2. Option 2    |
+| 3. Option 3    | 4. Option 4    |
+-----------------------------------
 
+Automatically pad length of options to 16 characters each
 */
 
+
 void Menu::printMenu() {
-  cout << "== " << title << " ==" << endl;
-  cout << "-----------------------------" << endl;
+  // Print title
+  // calculate number of equal signs needed
+  // subtract 2 and title length from 35, divide by 2
+  int numEquals = (35 - 2 - title.length()) / 2;
+  for (int i = 0; i < numEquals; i++) {
+    cout << "=";
+  }
+  cout << " " << title << " ";
+  for (int i = 0; i < numEquals; i++) {
+    cout << "=";
+  }
+  // if title length is even, add an extra equal sign
+  if (title.length() % 2 == 0) {
+    cout << "=";
+  }
+  cout << endl;
+  // Print options
+  // Print top line of options
+  cout << "-----------------------------------" << endl;
+  // Print options
   for (int i = 0; i < numOptions; i++) {
-    if (i % 2 == 0) {
-      cout << "| ";
+    cout << "| " << i + 1 << ". " << options[i];
+    // Pad options to 16 characters
+    for (int j = 0; j < 16 - options[i].length() - 4; j++) {
+      cout << " ";
     }
-    cout << i + 1 << ". " << options[i];
+    // Print second column of options
     if (i % 2 == 1) {
-      cout << " |" << endl;
-    } else {
-      cout << " | ";
+      cout << "|" << endl;
     }
   }
-  cout << "-----------------------------" << endl;
+  // Print bottom line of options
+  cout << "-----------------------------------" << endl;
 }
