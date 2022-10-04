@@ -19,88 +19,16 @@
   \pagebreak
   
   \section{Description}
+  The game is a text-based, turn-based, player-vs-CPU fighting and adventure game. Initially, the player chooses tocatch 3 Pokemon from a given list of several Pokemon, each with unique details and stats (name, type, level, HP, basicattack, special attack, and defense). It is explained to the player that their objective is to reach a final landmark (the topof Mount Fuji), and that to get there, they will encounter enemies (CPUs), each holding 1 to 3 Pokemon. The player willhave to battle and defeat 10 enemies, each being more difficult than the last. After defeating the 3rd, 6th, and 9thenemy, the player will encounter a new landmark, which will act as a checkpoint. If the player’s pokemon are alldefeated in a battle, the player will be returned to the most recently passed checkpoint, and if any enemies weredefeated after passing the checkpoint, they will be reset, and the player will have to battle them again. The player winsthe game once they have defeated all 10 enemies, and reached the top of Mount Fuji.
   
-  \subsection{The basics}
-  The project idea is a player-vs-cpu, turn-based, pokemon fighting game. Player chooses three of the six given Pokemon, with details of each pokemon provided (name, attribute, attack and defence). Cpu will have 3 randomised Pokemon, which will be shown when the battle begins. The idea of the game is to battle until one side loses all their Pokemon. At each turn, players have the option to use their attack or special attack. \par
-  There are three attributes of Pokemon, each with two Pokemon:
+  \subsection{Pokemon}
   \begin{itemize}
-    \item Water attribute
-    \begin{itemize}
-      \item POKEMON 1
-      \item POKEMON 2
-    \end{itemize}
-    \item Fire attribute
-    \begin{itemize}
-      \item POKEMON 3
-      \item POKEMON 4
-    \end{itemize}
-    \item Grass attribute
-    \begin{itemize}
-      \item POKEMON 5
-      \item POKEMON 6
-    \end{itemize}
-  \end{itemize}
-    
-  Pokemon switched out when hp reaches 0, and the winner is determined when the opponent has no more Pokemon. \\
-  
-  \subsection{Types of moves}
-  \begin{itemize}
-    \item Attack
+    \item Name: Each Pokemon has a unique name. 
+    \item Type: Each Pokemon possesses a type (either water, fire, or grass).
       \begin{itemize}
-        \item Opponent's defense $<$ dealer's attack
-          \begin{itemize}
-            \item Base + difference damage is dealt
-            \item Adds $x$ number of skill points for successful damage
-          \end{itemize}
-        \item Opponent's defense $>$ dealer's attack
-          \begin{itemize}
-            \item Base damage is dealt
-            \item Adds 1 skill point for unsuccessful damage
-          \end{itemize}
+        \item Water is weak to grass attacks
+        \item 
       \end{itemize}
-    \item Defense
-      \begin{itemize}
-        \item Higher defense $\implies x$ skill points
-        \item Lower defense $\implies$ 1 skill point
-      \end{itemize}
-    \item Special attack
-      \begin{itemize}
-        \item Attribute attacks that can be used any time
-          \begin{itemize}
-            \item If attribute is stronger, then $2\times$ damage dealt
-            \item If attribute is the same, then $1\times$ damage dealt
-            \item If attribute is weaker, then $\frac{1}{2}\times$ damage dealt
-          \end{itemize}
-        \item Damage is dependent on opponent's defense HP
-          \begin{itemize}
-            \item Equal / higher defense $\implies$ base damage
-            \item Lower defense $\implies$ base + difference damage
-          \end{itemize}
-      \end{itemize}
-  \end{itemize}
-  
-  \subsection{Attributes}
-  Certain Pokemon are weaker/stronger against other Pokemon of different attributes. \par
-  Types of attributes:
-  \begin{itemize}
-    \item Water (strong against fire, weak against grass)
-    \item Fire (strong against grass, weak against water)
-    \item Grass (strong against water, weak against fire)
-  \end{itemize}
-  
-  \subsection{Levelling up}
-  
-  Once having gained a certain number of skill points, user can choose to use their turn to level up their pokemon. \par
-  
-  \begin{itemize}
-    \item Increase HP for attack and defense
-    \item Any damage dealt will be erased, so Pokemon level up with full HP
-    \item At each level-up, more skill points are required for next level-up
-      \begin{itemize}
-        \item Level 1 $\to$ 2: requires $x$ skill points
-        \item Level 2 $\to$ 3: requires $x+10$ skill points, etc. 
-      \end{itemize}
-    \item At certain level ups (e.g. 3, 6, 10), major increase in attack and defense
   \end{itemize}
   
   \pagebreak

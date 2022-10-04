@@ -2,7 +2,7 @@
 
 ## Description
 
-The project idea is a player-vs-cpu, turn-based, pokemon fighting game. Player chooses three of the six given Pokemon, with details of each pokemon provided (name, attribute, attack and defense). Cpu will have 3 randomised Pokemon, which will be shown when the battle begins. The idea of the game is to battle until one side loses all their Pokemon. At each turn, players have the option to use their attack, special attack, 
+The project idea is a player-vs-cpu, turn-based, pokemon fighting game. Player chooses three of the six given Pokemon, with details of each pokemon provided (name, attribute, attack and defense). Cpu will have 3 randomized Pokemon, which will be shown when the battle begins. The idea of the game is to battle until one side loses all their Pokemon. At each turn, players have the option to use their attack, special attack, 
 There are three attributes of Pokemon, each with two Pokemon:
 * water attribute (strong against fire, weak against grass)
   + POKEMON 1
@@ -27,8 +27,8 @@ There are three attributes of Pokemon, each with two Pokemon:
     + lower defense = 1 skill point
   - special attack 
     + attribute attacks that can be used any time
-      * if attribute is stronger, then 2xdamage dealt
-      * if attribute is weaker, then 1/2xdamage dealt
+      * if attribute is stronger, then 2x damage dealt
+      * if attribute is weaker, then 1/2x damage dealt
       * if attribute is the same, then damage dealt
     + damage is dependent on opponent's defense hp
       * equal/higher defense -> base damage
