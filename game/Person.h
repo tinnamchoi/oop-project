@@ -1,25 +1,16 @@
 #ifndef PERSON_H
 #define PERSON_H
 #include <iostream>
+#include <string>
 
 class Person {
-    protected:
-        std::string name;
-        move; // not sure what data type to use
-        int pokemonDefeated;
-        int xp; // aka skill points/experience points
+ protected:
+  std::string name;
 
-    public:
-        // Setters
-        void setName();
-
-        // Getters
-        getMove(); // not sure what data type to use
-
-        // Functions
-        bool winAction();
-        bool winPokemon();
-        bool winBattle();
+ public:
+  Person();
+  void setName(std::string name);
+  std::string getName();
 };
 
 #endif
