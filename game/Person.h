@@ -1,9 +1,12 @@
 #ifndef PERSON_H
 #define PERSON_H
+
 #include <iostream>
 #include <string>
 
-class Person {
+#include "Player.h"
+
+class Person : public Player {
  protected:
   std::string name;
 
