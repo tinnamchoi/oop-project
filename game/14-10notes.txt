@@ -1,0 +1,11 @@
+1. Need class for Move and for Type? As they must be a data type? Added h and cpp files, but need to figure out their data members.
+2. Need to work out which classes are inheritants of which. Some maybe need to be inheritants of multiple classes? idk :P
+3. Not sure how to store 'moveslearnt', maybe a vector/array?
+4. Not sure about using vectors, as planned on using in Menu class for 'Options'.
+5. Also need to make constructors and default constructors for each class?
+
+|-----------------------------------------------------------------------|
+|    o   \ o /  _ o         __|    \ /     |__        o _  \ o /   o    |
+|   /|\    |     /\   ___\o   \o    |    o/    o/__   /\     |    /|\   |
+|   / \   / \   | \  /)  |    ( \  /o\  / )    |  (\  / |   / \   / \   |
+|-----------------------------------------------------------------------|
