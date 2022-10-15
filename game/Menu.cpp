@@ -11,12 +11,10 @@ Menu::Menu(std::string title, std::vector<std::string> options) {
   this->options = options;
 }
 void Menu::printMenu() {
-  std::cout << title << std::endl;
+  std::cout << std::endl << title << std::endl;
   // print all options
   for (int i = 0; i < (int)options.size(); i++) {
     std::cout << i + 1 << ". " << options[i] << std::endl;
   }
 }
-std::vector<std::string> Menu::getOptions() {
-  return options;
-}
+std::vector<std::string> Menu::getOptions() { return options; }

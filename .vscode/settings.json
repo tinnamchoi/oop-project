@@ -63,5 +63,6 @@
     "typeinfo": "cpp",
     "variant": "cpp",
     "valarray": "cpp"
-  }
+  },
+  "cSpell.enabled": false
 }

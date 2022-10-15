@@ -3,18 +3,11 @@
 #include <iostream>
 
 class Pokemon {
-    protected:
-        int level;
-
-    public:
-        // Printers
-        void printInfo();
-
-        // Getters
-        std::string getName();
-        getType(); // not sure what data type to use
-        int getHealth();
-        int getLevel();
+ public:
+  std::string name;
+  int attack;
+  Pokemon();
+  void newPokemon(std::string name);
 };
 
 #endif
