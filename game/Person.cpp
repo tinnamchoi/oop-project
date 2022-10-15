@@ -1,5 +1,8 @@
 #include "Person.h"
 
+#include <iostream>
+#include <string.h>
+
 Person::Person() {
     name = "Player 1";
 }
@@ -13,6 +16,6 @@ std::string Person::getName() {
 }
 
 void Person::move() {
-    std::cout << "Enter move (): " << std::endl; //enter a character to represent a move
+    cout << "Enter move (): " << endl; //enter a character to represent a move
     cin >> move;
 }
