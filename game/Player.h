@@ -12,7 +12,7 @@ class Player {
  public:
   //constructor
   Player();
-  virtual void move = 0; //implemented in each child class - not sure if this is needed.
+  virtual void move() = 0; //implemented in each child class - not sure if this is needed.
 
   //getter
   char getMove(); //returns move made
