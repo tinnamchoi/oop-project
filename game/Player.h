@@ -4,11 +4,21 @@
 #include <iostream>
 #include <string>
 
-//main class for computer and person
+//main player class - subclasses are person and computer
 class Player {
+ protected:
+  std::string pokemon[6]; //this provides player with 6 pokemon options
+  char move; //take move
  public:
-  std::string pokemon[6]; //this allows player 6 pokemon choices
+  //constructor
   Player();
+  //virtual void move = 0; //implemented in each child class - not sure if this is needed.
+
+  //getter
+  char getMove(); //returns move made
+    
+  //else
+  bool win(Player * opponent); //compare players' moves to see who wins
 };
 
 #endif
