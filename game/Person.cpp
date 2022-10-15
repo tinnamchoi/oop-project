@@ -1,7 +1,7 @@
 #include "Person.h"
 
 Person::Person() {
-  name = "Default Name";
+  name = "Player 1";
 }
 void Person::setName(std::string name) {
   this->name = name;
