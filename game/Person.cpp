@@ -17,6 +17,6 @@ std::string Person::getName() {
 }
 
 void Person::move() {
-    std::cout << "Enter move (): " << std::endl; //enter a character to represent a move
+    std::cout << "Enter move ('a' for attack, 'd' for defense, 's' for special attack): " << std::endl; //enter a character to represent a move
     std::cin >> move; //take move and store into the void move variable from player main class
 }
