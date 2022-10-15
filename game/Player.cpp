@@ -8,7 +8,7 @@ Player::Player() {
     pokemon[4] = "Pokemon 5";
     pokemon[5] = "Pokemon 6";
     
-    move = "a"; //currently define 'a' for attack
+    move = 'a'; //currently define 'a' for attack
 }
 
 char Player::getMove() { //return the move made
