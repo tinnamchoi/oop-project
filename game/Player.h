@@ -1,17 +1,15 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-class Player {
-    protected:
-        pokemonOwned;
+#include <iostream>
+#include <string>
 
-    public:
-        // Functions
-        void addPokemon();
-        void removePokemon();
-        move();
+class Player {
+ protected:
+  std::string pokemon[6];
+
+ public:
+  Player();
 };
 
 #endif
-
-// Not sure what data types to use for pokemonOwned and move()

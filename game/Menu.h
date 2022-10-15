@@ -1,19 +1,23 @@
 #ifndef MENU_H
 #define MENU_H
+
 #include <iostream>
+#include <string>
+#include <vector>
 
 class Menu {
-    protected:
-        std::string title;
-        options; // not sure how to do vectors :P
+ protected:
+  std::string title;
+  std::vector<std::string> options;
 
-    public:
-        // Printer
-        void printMenu();
-
-        // Setters
-        void setTitle();
-        void setOptions();
+ public:
+  Menu();
+  Menu(std::string title, std::vector<std::string> options);
+  
+  void setTitle();
+  void setOptions();
+  
+  void printMenu();
 };
 
 #endif
