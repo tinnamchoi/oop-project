@@ -5,10 +5,8 @@
 #include <string>
 
 class Player {
- protected:
-  std::string pokemon[6];
-
  public:
+  std::string pokemon[6];
   Player();
 };
 

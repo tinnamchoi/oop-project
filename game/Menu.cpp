@@ -17,3 +17,6 @@ void Menu::printMenu() {
     std::cout << i + 1 << ". " << options[i] << std::endl;
   }
 }
+std::vector<std::string> Menu::getOptions() {
+  return options;
+}

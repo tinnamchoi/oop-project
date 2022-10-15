@@ -6,17 +6,18 @@
 #include <vector>
 
 class Menu {
- protected:
+ public:
   std::string title;
   std::vector<std::string> options;
-
- public:
+  
   Menu();
   Menu(std::string title, std::vector<std::string> options);
-  
+
   void setTitle();
   void setOptions();
-  
+
+  std::vector<std::string> getOptions();
+
   void printMenu();
 };
 
