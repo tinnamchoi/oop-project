@@ -6,7 +6,7 @@
 
 class Player {
  public:
-  std::string pokemon[6];
+  std::string pokemon[6]; //this allows player 6 pokemon choices
   Player();
 };
 
