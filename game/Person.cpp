@@ -1,3 +1,4 @@
+#include "Player.h"
 #include "Person.h"
 
 #include <iostream>
@@ -16,6 +17,6 @@ std::string Person::getName() {
 }
 
 void Person::move() {
-    cout << "Enter move (): " << endl; //enter a character to represent a move
-    cin >> move; //take move and store into the void move variable from player main class
+    std::cout << "Enter move (): " << std::endl; //enter a character to represent a move
+    std::cin >> move; //take move and store into the void move variable from player main class
 }
