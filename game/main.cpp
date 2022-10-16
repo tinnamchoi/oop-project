@@ -53,7 +53,7 @@ int main() {
               << " " << person.pokemon[i].special << std::endl;
   }
 
-  srand(time(NULL));
+  // srand(time(NULL));
 
   for (int i = 0; i < 10; i++) {
     // Announce round number
