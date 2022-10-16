@@ -7,17 +7,17 @@ Player::Player() {
     pokemon[3] = "Pokemon 4";
     pokemon[4] = "Pokemon 5";
     pokemon[5] = "Pokemon 6";
-    
-    move = 'a'; //currently define 'a' for attack
+
+    recentMove = 'a'; //currently define 'a' for attack
 }
 
 char Player::getMove() { //return the move made
-    return move;
+    return recentMove;
 }
 
 bool Player::win(Player * opponent) { //polymorphism
-    char recent = move; //take the move
+    char recent = recemtMove; //take the move
     char op = opponent->getMove();
-    
-   //create an if statement to determine scores based on move made - return true if player wins, false if comp wins
+
+    //create an if statement to determine scores based on move made - return true if player wins, false if comp wins
 }
