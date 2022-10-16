@@ -1,13 +1,16 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
+
+#include "Player.h"
 #include <iostream>
 
-class Computer {
-    protected:
-        move; // not sure what data type to use
+class Computer : public Player {
+  public:
+    //constructor
+    Computer();
 
-    public:
-        move(); // (randomise an action) - not sure what data type to use
+    //else
+    void move(); // (randomise an action)
 };
 
 #endif
