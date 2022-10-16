@@ -22,6 +22,7 @@ int main() {
         case 0:
           // print information about pokemon
           std::cout << "================================" << std::endl;
+          std::cout << "Name       Attack" << std::endl;
           std::cout << "Bulbasaur  49" << std::endl;
           std::cout << "Charmander 52" << std::endl;
           std::cout << "Squirtle   48" << std::endl;
