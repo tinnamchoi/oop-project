@@ -9,7 +9,7 @@
 // main class for computer and person
 class Player {
  public:
-  Pokemon pokemon[3];  // this allows player 6 pokemon choices
+  Pokemon pokemon[3];  // this allows player 3 pokemon choices
   Player();
 };
 
