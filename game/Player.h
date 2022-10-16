@@ -8,7 +8,7 @@
 class Player {
  protected:
   std::string pokemon[6]; //this provides player with 6 pokemon options
-  char move; //take move
+  char recentMove; //take move
  public:
   //constructor
   Player();
