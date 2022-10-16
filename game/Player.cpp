@@ -16,7 +16,7 @@ char Player::getMove() { //return the move made
 }
 
 bool Player::win(Player * opponent) { //polymorphism
-    char recent = recemtMove; //take the move
+    char recent = recentMove; //take the move
     char op = opponent->getMove();
 
     //create an if statement to determine scores based on move made - return true if player wins, false if comp wins
