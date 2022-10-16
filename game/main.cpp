@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 #include <string>
 
 #include "Menu.h"
@@ -10,14 +11,21 @@ int main() {
   Person person;
   person.setName("John");
 
+  int choice;
   for (int i = 0; i < 3; i++) {
     while (true) {
       Menu menu("Choose 3 Pokemon. Enter 0 to check information",
                 {"Bulbasaur", "Charmander", "Squirtle", "Pikachu", "Eevee",
                  "Mewtwo"});
-      menu.printMenu();
-      int choice;
-      std::cin >> choice;
+                 
+      // prevent infinite loop https://stackoverflow.com/a/10349885
+      while (menu.printMenu() && !(std::cin >> choice)) {
+        std::cin.clear();  // clear bad input flag
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
+                        '\n');  // discard input
+        std::cout << "Invalid input; please re-enter.\n";
+      }
+      
       switch (choice) {
         case 0:
           // print information about pokemon
@@ -35,10 +43,6 @@ int main() {
           // add pokemon to person's pokemon array
           person.pokemon[i].newPokemon(menu.getOptions()[choice - 1]);
           goto chose;
-        default:
-          // invalid choice
-          std::cout << "Invalid choice" << std::endl;
-          break;
       }
     }
   chose:;
