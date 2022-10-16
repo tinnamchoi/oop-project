@@ -8,6 +8,7 @@
 class Player {
  protected:
     char recentMove; //take move
+    int score; //calculation of difference between chosen moves
  public:
       std::string pokemon[6]; //this provides player with 6 pokemon options
      //constructor
