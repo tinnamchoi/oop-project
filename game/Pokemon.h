@@ -5,11 +5,11 @@
 class Pokemon {
  public:
   std::string name;
+  int level;
   int attack;
   int special;
-  int health;
   int defense;
-  int level;
+  int health;
   Pokemon();
   void newPokemon(int id);
 };

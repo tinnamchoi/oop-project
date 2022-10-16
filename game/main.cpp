@@ -3,6 +3,7 @@
 #include <string>
 
 #include "Battle.h"
+#include "BattleMenu.h"
 #include "Computer.h"
 #include "Menu.h"
 #include "Person.h"
@@ -20,15 +21,7 @@ int main() {
                 {"Pokemon 1", "Pokemon 2", "Pokemon 3", "Pokemon 4",
                  "Pokemon 5", "Pokemon 6"});
 
-      // prevent infinite loop https://stackoverflow.com/a/10349885
-      while (menu.printMenu() && !(std::cin >> choice)) {
-        std::cin.clear();  // clear bad input flag
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
-                        '\n');  // discard input
-        std::cout << "Invalid input; please re-enter.\n";
-      }
-
-      switch (choice) {
+      switch (choice = menu.getChoice()) {
         case 0:
           // print information about pokemon
           std::cout << "================================" << std::endl;
@@ -51,10 +44,12 @@ int main() {
   }
 
   std::cout << std::endl << person.name << "'s Pokemon:" << std::endl;
-  // print all pokemon names and attacks
+  // print all pokemon names and stats
   for (int i = 0; i < 3; i++) {
-    std::cout << person.pokemon[i].name << " " << person.pokemon[i].attack
-              << std::endl;
+    std::cout << person.pokemon[i].name << " " << person.pokemon[i].level << " "
+              << person.pokemon[i].health << " " << person.pokemon[i].attack
+              << " " << person.pokemon[i].special << " "
+              << person.pokemon[i].defense << std::endl;
   }
 
   srand(time(NULL));
@@ -67,29 +62,42 @@ int main() {
     Computer computer(i);
     std::cout << std::endl << "Computer " << i << "'s Pokemon:" << std::endl;
     for (int j = 0; j < 3; j++) {
-      std::cout << computer.pokemon[j].name << " " << computer.pokemon[j].attack
-                << std::endl;
+      std::cout << computer.pokemon[j].name << " " << computer.pokemon[j].level
+                << " " << computer.pokemon[j].health << " "
+                << computer.pokemon[j].attack << " "
+                << computer.pokemon[j].special << " "
+                << computer.pokemon[j].defense << std::endl;
     }
 
     // Battle
     Battle battle(&person, &computer);
+
     // Let player choose pokemon before battle
     Menu menu("Choose a Pokemon to start",
               {person.pokemon[0].name, person.pokemon[1].name,
                person.pokemon[2].name});
-    while (menu.printMenu() && !(std::cin >> choice)) {
-      std::cin.clear();  // clear bad input flag
-      std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
-                      '\n');  // discard input
-      std::cout << "Invalid input; please re-enter.\n";
-    }
+    choice = menu.getChoice();
 
     while (battle.winState() == 0) {
-      // deduct health from pokemon
-      computer.pokemon[0].health -= person.pokemon[choice - 1].attack;
-      computer.pokemon[1].health -= person.pokemon[choice - 1].attack;
-      computer.pokemon[2].health -= person.pokemon[choice - 1].attack;
-      battle.printInfo();
+      BattleMenu battleMenu;
+      switch (battleMenu.getChoice()) {
+        case 1:
+          // attack
+          std::cout << std::endl << "You attack!" << std::endl;
+          break;
+        case 2:
+          // special attack
+          std::cout << std::endl << "You use a special attack!" << std::endl;
+          break;
+        case 3:
+          // defend
+          std::cout << std::endl << "You defend!" << std::endl;
+          break;
+        case 4:
+          // switch pokemon
+          std::cout << std::endl << "You switch Pokemon!" << std::endl;
+          break;
+      }
     }
   }
 
