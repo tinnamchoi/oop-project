@@ -12,10 +12,10 @@
 
 ## Essential Features (10 points each)	
 
-- [ ] Has more than 5 classes
+- [x] Has more than 5 classes
 - [ ] Has inheritance with at least three levels A-->B-->C
 - [ ] Has demonstratable use of polymorphism
-- [ ] Has abstract classes	
+- [x] Has abstract classes	
 
 ## Functional Features (5 points each)	
 

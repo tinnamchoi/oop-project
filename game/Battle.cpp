@@ -1,12 +1,14 @@
 #include "Battle.h"
 
-Battle::Battle(Player *player, Computer *computer) {
-  this->player = player;
+#include "Menu.h"
+
+Battle::Battle(Person *person, Computer *computer) {
+  this->person = person;
   this->computer = computer;
 }
 int Battle::winState() {
-  if (player->pokemon[0].health <= 0 && player->pokemon[1].health <= 0 &&
-      player->pokemon[2].health <= 0) {
+  if (person->pokemon[0].health <= 0 && person->pokemon[1].health <= 0 &&
+      person->pokemon[2].health <= 0) {
     std::cout << "You lose!" << std::endl;
     return 1;
   }
@@ -17,15 +19,89 @@ int Battle::winState() {
   }
   return 0;
 }
-void Battle::printInfo() {
-  std::cout << std::endl << "Player's Pokemon:" << std::endl;
-  for (int i = 0; i < 3; i++) {
-    std::cout << player->pokemon[i].name << " " << player->pokemon[i].health
-              << std::endl;
+
+void Battle::moveAttack(Pokemon *attacker, Pokemon *defender) {
+  int damage = attacker->attack - defender->defense;
+  if (damage < 0) {
+    damage = 0;
   }
-  std::cout << std::endl << "Computer's Pokemon:" << std::endl;
-  for (int i = 0; i < 3; i++) {
-    std::cout << computer->pokemon[i].name << " " << computer->pokemon[i].health
-              << std::endl;
+  defender->health -= damage;
+  std::cout << attacker->name << " attacks " << defender->name << " for "
+            << damage << " damage!" << std::endl;
+}
+void Battle::moveSpecial(Pokemon *attacker, Pokemon *defender) {
+  int damage = attacker->special - defender->defense;
+  if (damage < 0) {
+    damage = 0;
+  }
+  // multiply or divide by 2 depending on type advantage which is represented as
+  // an int if the 2 types are same
+  if (attacker->type == defender->type) {
+  } else if ((attacker->type == 1 && defender->type == 2) ||
+             (attacker->type == 2 && defender->type == 3) ||
+             (attacker->type == 3 && defender->type == 1)) {
+    damage /= 2;
+  } else if ((attacker->type == 1 && defender->type == 3) ||
+             (attacker->type == 2 && defender->type == 1) ||
+             (attacker->type == 3 && defender->type == 2)) {
+    damage *= 2;
+  }
+  defender->health -= damage;
+  std::cout << attacker->name << " uses a special attack on " << defender->name
+            << " for " << damage << " damage!" << std::endl;
+}
+void Battle::moveDefend(Pokemon *attacker) {
+  attacker->defense += 1;
+  std::cout << attacker->name << " defends!" << std::endl;
+}
+void Battle::moveSwap(int pokemonChoice) {
+  person->currentPokemon = pokemonChoice;
+  std::cout << person->pokemon[person->currentPokemon].name
+            << " is now in battle!" << std::endl;
+}
+
+void Battle::move(int moveChoice) {
+  switch (moveChoice) {
+    case 1:
+      // attack
+      moveAttack(&person->pokemon[person->currentPokemon],
+                 &computer->pokemon[computer->currentPokemon]);
+      break;
+    case 2:
+      // special attack
+      moveSpecial(&person->pokemon[person->currentPokemon],
+                  &computer->pokemon[computer->currentPokemon]);
+      break;
+    case 3:
+      // defend
+      moveDefend(&person->pokemon[person->currentPokemon]);
+      break;
+    case 4:
+      // swap
+      Menu menu("Choose a Pokemon to start",
+                {person->pokemon[0].name, person->pokemon[1].name,
+                 person->pokemon[2].name});
+      moveSwap(menu.getChoice() - 1);
+      break;
   }
 }
+void Battle::move() {
+  int moveChoice = rand() % 3 + 1;
+  switch (moveChoice) {
+    case 1:
+      // attack
+      moveAttack(&computer->pokemon[computer->currentPokemon],
+                 &person->pokemon[person->currentPokemon]);
+      break;
+    case 2:
+      // special attack
+      moveSpecial(&computer->pokemon[computer->currentPokemon],
+                  &person->pokemon[person->currentPokemon]);
+      break;
+    case 3:
+      // defend
+      moveDefend(&computer->pokemon[computer->currentPokemon]);
+      break;
+  }
+}
+

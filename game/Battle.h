@@ -4,18 +4,26 @@
 #include <iostream>
 #include <string>
 
-#include "Pokemon.h"
-#include "Player.h"
-#include "Person.h"
 #include "Computer.h"
+#include "Person.h"
+#include "Player.h"
+#include "Pokemon.h"
 
-class Battle{
+class Battle {
  public:
-  Player *player;
+  Person *person;
   Computer *computer;
-  Battle(Player *player, Computer *computer);
+  int computerPokemon;
+  Battle(Person *person, Computer *computer);
   int winState();
-  void printInfo();
+
+  void moveAttack(Pokemon *attacker, Pokemon *defender);
+  void moveSpecial(Pokemon *attacker, Pokemon *defender);
+  void moveDefend(Pokemon *attacker);
+  void moveSwap(int pokemonChoice);
+  
+  void move(int moveChoice);
+  void move();
 };
 
 #endif

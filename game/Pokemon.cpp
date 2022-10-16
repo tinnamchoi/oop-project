@@ -8,45 +8,53 @@ void Pokemon::newPokemon(int id) {
   switch (id) {
     case 0:
       name = "Pokemon 1";
-      attack  = 2;
+      type = 1;
+      attack = 2;
       special = 3;
-      health  = 3;
-      defense = 4;
+      baseHealth = 3;
+      baseDefense = 4;
       break;
     case 1:
       name = "Pokemon 2";
-      attack  = 2;
+      type = 2;
+      attack = 2;
       special = 4;
-      health  = 5;
-      defense = 1;
+      baseHealth = 5;
+      baseDefense = 1;
       break;
     case 2:
       name = "Pokemon 3";
-      attack  = 3;
+      type = 3;
+      attack = 3;
       special = 4;
-      health  = 2;
-      defense = 3;
+      baseHealth = 2;
+      baseDefense = 3;
       break;
     case 3:
       name = "Pokemon 4";
-      attack  = 5;
+      type = 1;
+      attack = 5;
       special = 1;
-      health  = 3;
-      defense = 3;
+      baseHealth = 3;
+      baseDefense = 3;
       break;
     case 4:
       name = "Pokemon 5";
-      attack  = 2;
+      type = 2;
+      attack = 2;
       special = 2;
-      health  = 3;
-      defense = 5;
+      baseHealth = 3;
+      baseDefense = 5;
       break;
     case 5:
       name = "Pokemon 6";
-      attack  = 2;
+      type = 3;
+      attack = 2;
       special = 4;
-      health  = 4;
-      defense = 2;
+      baseHealth = 4;
+      baseDefense = 2;
       break;
   }
+  defense = baseDefense;
+  health = baseHealth;
 }
