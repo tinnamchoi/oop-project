@@ -2,6 +2,7 @@
 #include <limits>
 #include <string>
 
+#include "Computer.h"
 #include "Menu.h"
 #include "Person.h"
 #include "Player.h"
@@ -17,7 +18,7 @@ int main() {
       Menu menu("Choose 3 Pokemon. Enter 0 to check information",
                 {"Bulbasaur", "Charmander", "Squirtle", "Pikachu", "Eevee",
                  "Mewtwo"});
-                 
+
       // prevent infinite loop https://stackoverflow.com/a/10349885
       while (menu.printMenu() && !(std::cin >> choice)) {
         std::cin.clear();  // clear bad input flag
@@ -25,7 +26,7 @@ int main() {
                         '\n');  // discard input
         std::cout << "Invalid input; please re-enter.\n";
       }
-      
+
       switch (choice) {
         case 0:
           // print information about pokemon
@@ -41,7 +42,7 @@ int main() {
           break;
         case 1 ... 6:
           // add pokemon to person's pokemon array
-          person.pokemon[i].newPokemon(menu.getOptions()[choice - 1]);
+          person.pokemon[i].newPokemon(choice - 1);
           goto chose;
       }
     }
@@ -53,6 +54,17 @@ int main() {
   for (int i = 0; i < 3; i++) {
     std::cout << person.pokemon[i].name << " " << person.pokemon[i].attack
               << std::endl;
+  }
+
+  srand(time(NULL));
+
+  for (int i = 0; i < 10; i++) {
+    Computer computer(i);
+    std::cout << std::endl << "Computer " << i << "'s Pokemon:" << std::endl;
+    for (int j = 0; j < 3; j++) {
+      std::cout << computer.pokemon[j].name << " " << computer.pokemon[j].attack
+                << std::endl;
+    }
   }
 
   return 0;

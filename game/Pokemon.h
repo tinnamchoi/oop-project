@@ -7,7 +7,7 @@ class Pokemon {
   std::string name;
   int attack;
   Pokemon();
-  void newPokemon(std::string name);
+  void newPokemon(int id);
 };
 
 #endif

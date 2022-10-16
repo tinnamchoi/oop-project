@@ -1,3 +1,3 @@
 make:
-	g++ -std=c++11 -Wall Pokemon.cpp Player.cpp Person.cpp Menu.cpp main.cpp
+	g++ -std=c++11 -Wall Menu.cpp Pokemon.cpp Player.cpp Person.cpp Computer.cpp main.cpp
 	./a.out
