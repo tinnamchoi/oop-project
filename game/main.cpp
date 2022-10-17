@@ -47,9 +47,10 @@ int main() {
   // print all pokemon names and stats
   for (int i = 0; i < 3; i++) {
     std::cout << person.pokemon[i].name << " " << person.pokemon[i].level << " "
-              << person.pokemon[i].health << " " << person.pokemon[i].attack
-              << " " << person.pokemon[i].special << " "
-              << person.pokemon[i].defense << std::endl;
+              << person.pokemon[i].baseHealth << " " << person.pokemon[i].health
+              << " " << person.pokemon[i].baseDefense << " "
+              << person.pokemon[i].defense << " " << person.pokemon[i].attack
+              << " " << person.pokemon[i].special << std::endl;
   }
 
   srand(time(NULL));
@@ -76,27 +77,21 @@ int main() {
     Menu menu("Choose a Pokemon to start",
               {person.pokemon[0].name, person.pokemon[1].name,
                person.pokemon[2].name});
-    choice = menu.getChoice();
+    battle.moveSwap(menu.getChoice() - 1);
 
     while (battle.winState() == 0) {
       BattleMenu battleMenu;
-      switch (battleMenu.getChoice()) {
-        case 1:
-          // attack
-          std::cout << std::endl << "You attack!" << std::endl;
-          break;
-        case 2:
-          // special attack
-          std::cout << std::endl << "You use a special attack!" << std::endl;
-          break;
-        case 3:
-          // defend
-          std::cout << std::endl << "You defend!" << std::endl;
-          break;
-        case 4:
-          // switch pokemon
-          std::cout << std::endl << "You switch Pokemon!" << std::endl;
-          break;
+      battle.move(battleMenu.getChoice());
+      battle.move();
+      // print health of all pokemon
+      std::cout << std::endl << "Health:" << std::endl;
+      for (int j = 0; j < 3; j++) {
+        std::cout << person.pokemon[j].name << " " << person.pokemon[j].health
+                  << std::endl;
+      }
+      for (int j = 0; j < 3; j++) {
+        std::cout << computer.pokemon[j].name << " "
+                  << computer.pokemon[j].health << std::endl;
       }
     }
   }

@@ -6,6 +6,7 @@
 class Computer : public Player {
  public:
   Computer(int landmark);
+  int currentPokemon = 0;
 };
 
 #endif
