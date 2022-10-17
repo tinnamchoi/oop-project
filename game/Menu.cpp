@@ -1,4 +1,6 @@
 #include "Menu.h"
+#include <limits>
+
 
 Menu::Menu() {
   title = "Default Title";
@@ -18,4 +20,13 @@ bool Menu::printMenu() {
   }
   return true;
 }
-std::vector<std::string> Menu::getOptions() { return options; }
+int Menu::getChoice() {
+  int choice;
+  while (this->printMenu() && !(std::cin >> choice)) {
+    std::cin.clear();  // clear bad input flag
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(),
+                    '\n');  // discard input
+    std::cout << "Invalid input; please re-enter.\n";
+  }
+  return choice;
+}

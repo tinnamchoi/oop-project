@@ -13,13 +13,8 @@ class Menu {
   Menu();
   Menu(std::string title, std::vector<std::string> options);
 
-  void setTitle();
-  void setOptions();
-
-  std::vector<std::string> getOptions();
-
   bool printMenu();
-  
+  int getChoice();
 };
 
 #endif
