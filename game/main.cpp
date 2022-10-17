@@ -33,12 +33,12 @@ int main() {
           std::cout << "================================================================\n";
           std::cout << "Name:           Type:     Health: Attack: Special: Defense:"
                     << std::endl;
-          std::cout << "Chilli-Dog      Fire      20      4       5        5" << std::endl;
-          std::cout << "Water-Bear      Water     18      4       5        6" << std::endl;
-          std::cout << "Lettuce-Man     Grass     16      5       6        5" << std::endl;
-          std::cout << "Hot-Shot        Fire      20      2       4        10" << std::endl;
-          std::cout << "Ice-Ice-Baby    Water     20      2       5        7" << std::endl;
-          std::cout << "Leaf-Me-Alone   Grass     24      2       4        8" << std::endl;
+          std::cout << "Chilli-Dog      Fire      20      4       5        2" << std::endl;
+          std::cout << "Water-Bear      Water     18      4       5        3" << std::endl;
+          std::cout << "Lettuce-Man     Grass     16      5       6        2" << std::endl;
+          std::cout << "Hot-Shot        Fire      20      2       4        4" << std::endl;
+          std::cout << "Ice-Ice-Baby    Water     20      2       5        3" << std::endl;
+          std::cout << "Leaf-Me-Alone   Grass     24      2       4        3" << std::endl;
           std::cout << "================================================================\n";
           break;
         case 1 ... 6:
@@ -86,11 +86,11 @@ int main() {
     battle.moveSwap(menu.getChoice() - 1);
 
     while (battle.winState() == 0) {
-      //BattleMenu battleMenu;
-      //battle.move(battleMenu.getChoice());
+      BattleMenu battleMenu;
+      battle.move(battleMenu.getChoice());
       battle.move();
       
-      std::cout << "================================================================";
+      std::cout << "================================================================\n";
       person.printPokemon();
       computer.printPokemon();
     }
@@ -99,7 +99,10 @@ int main() {
     }
   }
 
-  std::cout << "End of the Game!" << std::endl;
+  // Lose message
+  std::cout << "Unfortunately, all of your Pokemon have perished in battle.\nYOU LOSE.\n";
+  // Win message
+  std::cout << "CONGRATULATIONS!!! You have officially been crowned the winner!!! Well done!\nYou will receive your Legendary Pokemon in the mail within the next [INSERT TRANSIT TIME HERE 01010111001] business days! Do enjoy!\n" << std::endl;
 
   return 0;
 }

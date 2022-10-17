@@ -14,7 +14,7 @@ void Pokemon::newPokemon(int id) {
       baseHealth = 20;
       attack = 4;
       special = 5;
-      baseDefense = 5;
+      baseDefense = 2;
       break;
     case 1:
       name = "Water-Bear";
@@ -22,7 +22,7 @@ void Pokemon::newPokemon(int id) {
       baseHealth = 18;
       attack = 4;
       special = 5;
-      baseDefense = 6;
+      baseDefense = 3;
       break;
     case 2:
       name = "Lettuce-Man";
@@ -30,7 +30,7 @@ void Pokemon::newPokemon(int id) {
       baseHealth = 16;
       attack = 5;
       special = 6;
-      baseDefense = 5;
+      baseDefense = 2;
       break;
     case 3:
       name = "Hot-Shot";
@@ -38,7 +38,7 @@ void Pokemon::newPokemon(int id) {
       baseHealth = 20;
       attack = 2;
       special = 4;
-      baseDefense = 10;
+      baseDefense = 4;
       break;
     case 4:
       name = "Ice-Ice-Baby";
@@ -46,7 +46,7 @@ void Pokemon::newPokemon(int id) {
       baseHealth = 20;
       attack = 2;
       special = 5;
-      baseDefense = 7;
+      baseDefense = 3;
       break;
     case 5:
       name = "Leaf-Me-Alone";
@@ -54,7 +54,7 @@ void Pokemon::newPokemon(int id) {
       baseHealth = 24;
       attack = 2;
       special = 4;
-      baseDefense = 8;
+      baseDefense = 3;
       break;
   }
   defense = baseDefense;
