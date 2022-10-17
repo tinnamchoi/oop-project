@@ -67,25 +67,25 @@ void Battle::moveDefend(Pokemon *attacker) { attacker->defense += 1; }
 
 // Battle
 void Battle::move(int moveChoice) {
+  // Person's move
   switch (moveChoice) {
     case 1:
       cout << person->name << "'s "
            << person->pokemon[person->currentPokemon].getName() << " attacked "
            << computer->name << "'s "
-           << computer->pokemon[computerPokemon].getName() << " for "
+           << computer->pokemon[computer->currentPokemon].getName() << " for "
            << moveAttack(&person->pokemon[person->currentPokemon],
-                         &computer->pokemon[computerPokemon])
-           << "damage!" << endl;
+                         &computer->pokemon[computer->currentPokemon])
+           << " damage!" << endl;
       break;
     case 2:
-      // Print person's
       cout << person->name << "'s "
            << person->pokemon[person->currentPokemon].getName()
            << " used a special attack on " << computer->name << "'s "
-           << computer->pokemon[computerPokemon].getName() << " for "
+           << computer->pokemon[computer->currentPokemon].getName() << " for "
            << moveSpecial(&person->pokemon[person->currentPokemon],
-                          &computer->pokemon[computerPokemon])
-           << "damage!" << endl;
+                          &computer->pokemon[computer->currentPokemon])
+           << " damage!" << endl;
       break;
     case 3:
       moveDefend(&person->pokemon[person->currentPokemon]);
@@ -98,11 +98,18 @@ void Battle::move(int moveChoice) {
       person->printPokemon();
       cout << "Which pokemon would you like to swap to?" << endl << "Number: ";
       cin >> choice;
-      while (person->swapPokemon(choice) == false) {
+      while (person->swapPokemon(choice - 1) == false) {
         cout << "Choose another pokemon: ";
         cin >> choice;
       }
       break;
+  }
+  if (computer->pokemon[computer->currentPokemon].health <= 0) {
+    person->pokemon[person->currentPokemon].levelUp();
+    computer->currentPokemon += 1;
+    cout << computer->name << "'s "
+         << computer->pokemon[computer->currentPokemon].getName()
+         << " is now in battle!" << endl;
   }
 }
 void Battle::move() {
@@ -111,26 +118,26 @@ void Battle::move() {
   switch (moveChoice) {
     case 1:
       cout << computer->name << "'s "
-           << computer->pokemon[computerPokemon].getName() << " attacked "
+           << computer->pokemon[computer->currentPokemon].getName() << " attacked "
            << person->name << "'s "
            << person->pokemon[person->currentPokemon].getName() << " for "
-           << moveAttack(&computer->pokemon[computerPokemon],
+           << moveAttack(&computer->pokemon[computer->currentPokemon],
                          &person->pokemon[person->currentPokemon])
-           << "damage!" << endl;
+           << " damage!" << endl;
       break;
     case 2:
       cout << computer->name << "'s "
-           << computer->pokemon[computerPokemon].getName()
+           << computer->pokemon[computer->currentPokemon].getName()
            << " used a special attack on " << person->name << "'s "
            << person->pokemon[person->currentPokemon].getName() << " for "
-           << moveSpecial(&computer->pokemon[computerPokemon],
+           << moveSpecial(&computer->pokemon[computer->currentPokemon],
                           &person->pokemon[person->currentPokemon])
-           << "damage!" << endl;
+           << " damage!" << endl;
       break;
     case 3:
-      moveDefend(&computer->pokemon[computerPokemon]);
+      moveDefend(&computer->pokemon[computer->currentPokemon]);
       cout << computer->name << "'s "
-           << computer->pokemon[computerPokemon].getName() << " defended!"
+           << computer->pokemon[computer->currentPokemon].getName() << " defended!"
            << endl;
       break;
   }

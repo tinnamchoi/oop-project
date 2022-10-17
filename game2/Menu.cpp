@@ -36,12 +36,12 @@ bool Menu::printMenu() {
         cout << " ";
       }
 
-      cout << "                 |" << endl;
+      cout << "|" << endl;
     }
   }
   // if there are an odd number of options, print a blank line
   if (options.size() % 2 == 1) {
-    cout << "             | " << endl;
+    cout << "                      | " << endl;
   }
   cout << "=================================================" << endl;
   cout << "Enter your choice: ";

@@ -17,42 +17,42 @@ void Pokemon::newPokemon(int id) {
       baseHealth = 20;
       attack = 4;
       special = 5;
-      baseDefense = 5;
+      baseDefense = 2;
       break;
     case 1:
       type = 2;
       baseHealth = 18;
       attack = 4;
       special = 5;
-      baseDefense = 6;
+      baseDefense = 2;
       break;
     case 2:
       type = 3;
       baseHealth = 16;
       attack = 5;
       special = 6;
-      baseDefense = 5;
+      baseDefense = 2;
       break;
     case 3:
       type = 1;
       baseHealth = 20;
       attack = 2;
       special = 4;
-      baseDefense = 10;
+      baseDefense = 2;
       break;
     case 4:
       type = 2;
       baseHealth = 20;
       attack = 2;
       special = 5;
-      baseDefense = 7;
+      baseDefense = 2;
       break;
     case 5:
       type = 3;
       baseHealth = 24;
       attack = 2;
       special = 4;
-      baseDefense = 8;
+      baseDefense = 2;
       break;
   }
   defense = baseDefense;
