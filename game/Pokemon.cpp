@@ -69,6 +69,7 @@ std::string Pokemon::getName() {
     case 5:
       return "Pokemon 6";
   }
+  return "Error";
 }
 std::string Pokemon::getType() {
   switch (type) {
@@ -79,6 +80,7 @@ std::string Pokemon::getType() {
     case 3:
       return "Grass";
   }
+  return "Error";
 }
 
 void Pokemon::printStats(std::string playerName) {
