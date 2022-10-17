@@ -50,7 +50,7 @@ int main() {
   std::cout << std::endl << person.name << "'s Pokemon:" << std::endl;
   // print all pokemon names and stats
   for (int i = 0; i < 3; i++) {
-    std::cout << person.pokemon[i].name << " " << person.pokemon[i].level << " "
+    std::cout << person.pokemon[i].getName() << " " << person.pokemon[i].level << " "
               << " " << person.pokemon[i].health << " "
               << person.pokemon[i].defense << " " << person.pokemon[i].attack
               << " " << person.pokemon[i].special << std::endl;
@@ -66,7 +66,7 @@ int main() {
     Computer computer(i);
     std::cout << std::endl << "Computer " << i << "'s Pokemon:" << std::endl;
     for (int j = 0; j < 3; j++) {
-      std::cout << computer.pokemon[j].name << " " << computer.pokemon[j].level
+      std::cout << computer.pokemon[j].getName() << " " << computer.pokemon[j].level
                 << " " << computer.pokemon[j].health << " "
                 << computer.pokemon[j].attack << " "
                 << computer.pokemon[j].special << " "
@@ -78,8 +78,8 @@ int main() {
 
     // Let player choose pokemon before battle
     Menu menu("Choose a Pokemon to start",
-              {person.pokemon[0].name, person.pokemon[1].name,
-               person.pokemon[2].name});
+              {person.pokemon[0].getName(), person.pokemon[1].getName(),
+               person.pokemon[2].getName()});
     battle.moveSwap(menu.getChoice() - 1);
 
     while (battle.winState() == 0) {
@@ -89,11 +89,11 @@ int main() {
       // print health of all pokemon
       std::cout << std::endl << "Health:" << std::endl;
       for (int j = 0; j < 3; j++) {
-        std::cout << person.pokemon[j].name << " " << person.pokemon[j].health
+        std::cout << person.pokemon[j].getName() << " " << person.pokemon[j].health
                   << std::endl;
       }
       for (int j = 0; j < 3; j++) {
-        std::cout << computer.pokemon[j].name << " "
+        std::cout << computer.pokemon[j].getName() << " "
                   << computer.pokemon[j].health << std::endl;
       }
     }

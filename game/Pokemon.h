@@ -1,10 +1,12 @@
 #ifndef POKEMON_H
 #define POKEMON_H
+
 #include <iostream>
+#include <string>
 
 class Pokemon {
  public:
-  std::string name;
+  int id;
   int type;
   int level;
   int attack;
@@ -15,7 +17,9 @@ class Pokemon {
   int health;
   Pokemon();
   void newPokemon(int id);
-  void printStats();
+  std::string getName();
+  std::string getType();
+  void printStats(std::string playerName);
 };
 
 #endif

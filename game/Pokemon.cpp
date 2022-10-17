@@ -58,7 +58,36 @@ void Pokemon::newPokemon(int id) {
   defense = baseDefense;
   health = baseHealth;
 }
-void Pokemon::printStats() {
-  std::cout << name << " " << level << " " << health << " " << defense << " "
-            << attack << " " << special << std::endl;
+
+std::string Pokemon::getName() {
+  switch (id) {
+    case 0:
+      return "Pokemon 1";
+    case 1:
+      return "Pokemon 2";
+    case 2:
+      return "Pokemon 3";
+    case 3:
+      return "Pokemon 4";
+    case 4:
+      return "Pokemon 5";
+    case 5:
+      return "Pokemon 6";
+  }
+}
+std::string Pokemon::getType() {
+  switch (type) {
+    case 1:
+      return "Fire";
+    case 2:
+      return "Water";
+    case 3:
+      return "Grass";
+  }
+}
+
+void Pokemon::printStats(std::string playerName) {
+  std::cout << playerName << "'s" << getName() << " " << getType() << " "
+            << level << " " << health << " " << defense << " " << attack << " "
+            << special << std::endl;
 }
