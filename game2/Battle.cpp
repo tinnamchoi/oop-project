@@ -1,6 +1,11 @@
 #include "Battle.h"
 
-Battle::Battle(Person *person, Computer *computer) {}
+using namespace std;
+
+Battle::Battle(Person *person, Computer *computer) {
+  this->person = person;
+  this->computer = computer;
+}
 
 // Functions
 void Battle::resetStats() {
