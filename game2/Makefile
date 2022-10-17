@@ -9,3 +9,7 @@ player:
 menu:
 	g++ -std=c++11 -Wall Menu.cpp menuDriver.cpp
 	./a.out
+	
+pokemonMenu:
+	g++ -std=c++11 -Wall Pokemon.cpp Player.cpp PokemonMenu.cpp pokemonMenuDriver.cpp
+	./a.out

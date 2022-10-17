@@ -1,3 +1,7 @@
 #include "PokemonMenu.h"
 
-PokemonMenu::PokemonMenu() {}
+PokemonMenu::PokemonMenu() {
+  for (int i = 0; i < 6; i++) {
+    pokemon[i].newPokemon(i);
+  }
+}

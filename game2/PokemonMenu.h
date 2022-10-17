@@ -4,7 +4,7 @@
 #include "Menu.h"
 #include "Player.h"
 
-class PokemonMenu : public Menu, public Player {
+class PokemonMenu : public Player {
  public:
   PokemonMenu();
   Pokemon pokemon[6];
