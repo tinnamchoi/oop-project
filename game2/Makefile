@@ -1,5 +1,5 @@
 make:
-	g++ -std=c++11 -Wall Pokemon.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+	g++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
 	./a.out
 
 player:
@@ -16,4 +16,8 @@ pokemonMenu:
 
 computer:
 	g++ -std=c++11 -Wall Pokemon.cpp Player.cpp Computer.cpp computerDriver.cpp
+	./a.out
+
+battle:
+	g++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Computer.cpp Battle.cpp battleDriver.cpp
 	./a.out

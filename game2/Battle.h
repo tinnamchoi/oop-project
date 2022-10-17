@@ -24,10 +24,9 @@ class Battle {
   int winState();
 
   // Moves
-  void moveAttack(Pokemon *attacker, Pokemon *defender);
-  void moveSpecial(Pokemon *attacker, Pokemon *defender);
+  int moveAttack(Pokemon *attacker, Pokemon *defender);
+  int moveSpecial(Pokemon *attacker, Pokemon *defender);
   void moveDefend(Pokemon *attacker);
-  void moveSwap(int pokemonChoice);
 
   // Battle
   void move(int moveChoice);

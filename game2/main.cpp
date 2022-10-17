@@ -72,9 +72,23 @@ int main() {
 
     // Create a Battle object
     Battle battle(&person, &computer);
+    
+    cout << battle.person->pokemon[0].health << endl;
 
     // Battle loop
-    
+    int winState = battle.winState();
+    while (winState == 0) {
+      // Create a BattleMenu object
+      BattleMenu battleMenu;
+      battle.move(battleMenu.getChoice());
+      battle.move();
+      winState = battle.winState();
+      // Print the person's pokemon
+      person.printPokemon();
+      // Print the computer's pokemon
+      computer.printPokemon();
+    }
+    battle.resetStats();
   }
 
   return 0;
