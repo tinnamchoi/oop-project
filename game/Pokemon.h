@@ -6,6 +6,7 @@
 
 class Pokemon {
  public:
+  std::string name;
   int id;
   int type;
   int level;
@@ -16,6 +17,7 @@ class Pokemon {
   int baseHealth;
   int health;
   Pokemon();
+  Pokemon(int id);
   void newPokemon(int id);
   std::string getName();
   std::string getType();
