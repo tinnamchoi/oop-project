@@ -3,9 +3,10 @@
 
 using namespace std;
 
-#include "Pokemon.h"
-#include "Person.h"
 #include "Menu.h"
+#include "Person.h"
+#include "Player.h"
+#include "Pokemon.h"
 
 int main() {
   // Create a Person object
@@ -15,26 +16,33 @@ int main() {
   // Get choices of the person
   int choice;
   Menu menu("Choose 3 Pokemon. Enter 0 to check information",
-            {"Chilli-Dog", "Water-Bear", "Lettuce-Man", "HotShot", "Ice-Ice-Baby",
-             "Leaf-Me-Alone"});
+            {"Chilli-Dog", "Water-Bear", "Lettuce-Man", "HotShot",
+             "Ice-Ice-Baby", "Leaf-Me-Alone"});
   for (int i = 0; i < 3; i++) {
     while (true) {
-      switch (choice = menu.getChoice()) {
-        case 0:
-          // print information about pokemon
-          std::cout << "================================================================\n";
-          std::cout << "Name       Type Health Attack Special Defense"
-                    << std::endl;
-          std::cout << "Pokemon 1  1    3      2      3       4" << std::endl;
-          std::cout << "Pokemon 2  2    5      2      4       1" << std::endl;
-          std::cout << "Pokemon 3  3    2      3      4       3" << std::endl;
-          std::cout << "Pokemon 4  1    3      5      1       3" << std::endl;
-          std::cout << "Pokemon 5  2    3      2      2       5" << std::endl;
-          std::cout << "Pokemon 6  3    4      2      4       2" << std::endl;
-          std::cout << "================================================================";
+      choice = menu.getChoice();
+      switch (choice) {
+        case 0: {
+          Player player;
+          player.name = "Professor Oak";
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[0].newPokemon(0);
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[1].newPokemon(1);
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[2].newPokemon(2);
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[3].newPokemon(3);
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[4].newPokemon(4);
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[5].newPokemon(5);
+          player.printPokemon();
           break;
+        }
         case 1 ... 6:
           // add pokemon to person's pokemon array
+          person.pokemon.push_back(Pokemon());
           person.pokemon[i].newPokemon(choice - 1);
           goto chose;
       }
@@ -42,5 +50,8 @@ int main() {
   chose:;
   }
   
+  // Print the person's pokemon
+  person.printPokemon();
+
   return 0;
 }
