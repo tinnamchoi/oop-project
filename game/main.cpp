@@ -55,16 +55,17 @@ int main() {
   std::cout << "================================================================\n";
   std::cout << person.name << "'s Pokemon:\n\n";
   person.printPokemon();
-  std::cout << "================================================================\n";
+  std::cout << "================================================================\n\n";
 
   // srand(time(NULL));
 
   for (int i = 0; i < 10; i++) {
     // Announce round number
-    std::cout << std::endl << "Round " << i + 1 << std::endl << std::endl;
+    std::cout << "Round " << i + 1 << std::endl << std::endl;
 
     // Create computer
     Computer computer(i);
+    std::cout << "Enemy's Pokemon:\n\n";
     computer.printPokemon();
     std::cout << "================================================================";
     for (int i = 0; i < 3; i++) {
