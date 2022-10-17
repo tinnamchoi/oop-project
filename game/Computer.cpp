@@ -3,6 +3,7 @@
 #include "Pokemon.h"
 
 Computer::Computer(int landmark) {
+  name = names[landmark];
   switch (landmark) {
     case 0:
       pokemon[0].newPokemon(rand() % 6);

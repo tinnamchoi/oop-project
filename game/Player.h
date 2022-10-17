@@ -9,9 +9,11 @@
 // main class for computer and person
 class Player {
  public:
+  std::string name;
   Pokemon pokemon[3];  // this allows player 3 pokemon choices
   Player();
   int currentPokemon;
+  void printPokemon();
 };
 
 #endif
