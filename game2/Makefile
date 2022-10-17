@@ -13,3 +13,7 @@ menu:
 pokemonMenu:
 	g++ -std=c++11 -Wall Pokemon.cpp Player.cpp PokemonMenu.cpp pokemonMenuDriver.cpp
 	./a.out
+
+computer:
+	g++ -std=c++11 -Wall Pokemon.cpp Player.cpp Computer.cpp computerDriver.cpp
+	./a.out
