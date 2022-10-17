@@ -47,7 +47,8 @@ bool Menu::printMenu() {
 // Get the user's choice
 int Menu::getChoice() {
   int choice;
-  while (this->printMenu() && !(cin >> choice)) {
+  while ((this->printMenu() && !(cin >> choice)) || choice < 0 ||
+         choice > (int)options.size()) {
     cin.clear();  // clear bad input flag
     cin.ignore(numeric_limits<streamsize>::max(),
                '\n');  // discard input

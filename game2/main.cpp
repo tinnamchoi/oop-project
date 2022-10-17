@@ -1,14 +1,20 @@
+#include <stdlib.h>
+#include <time.h>
+
 #include <iostream>
 #include <string>
 
 using namespace std;
 
+#include "Computer.h"
 #include "Menu.h"
 #include "Person.h"
 #include "Player.h"
 #include "Pokemon.h"
 
 int main() {
+  srand(time(NULL));
+
   // Create a Person object
   Person person;
   cout << "Welcome, " << person.name << endl;
@@ -49,12 +55,21 @@ int main() {
     }
   chose:;
   }
-  
+
   // Print the person's pokemon
   person.printPokemon();
-  
+
   // Main loop
-  for (int i = 0; i < 10; i++)
+  for (int i = 0; i < 10; i++) {
+    // Create a Computer object
+    Computer computer(i);
+    cout << "You are at " << computer.name << endl;
+
+    // Print the computer's pokemon
+    computer.printPokemon();
+
+    // Battle
+  }
 
   return 0;
 }
