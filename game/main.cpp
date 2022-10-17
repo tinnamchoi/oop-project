@@ -26,7 +26,7 @@ int main() {
       switch (choice = menu.getChoice()) {
         case 0:
           // print information about pokemon
-          menu.printDivider();
+          std::cout << "================================================================";
           std::cout << "Name       Type Health Attack Special Defense"
                     << std::endl;
           std::cout << "Pokemon 1  1    3      2      3       4" << std::endl;
@@ -35,7 +35,7 @@ int main() {
           std::cout << "Pokemon 4  1    3      5      1       3" << std::endl;
           std::cout << "Pokemon 5  2    3      2      2       5" << std::endl;
           std::cout << "Pokemon 6  3    4      2      4       2" << std::endl;
-          menu.printDivider();
+          std::cout << "================================================================";
           break;
         case 1 ... 6:
           // add pokemon to person's pokemon array
@@ -48,9 +48,9 @@ int main() {
 
   // Print person's pokemon
   std::cout << std::endl;
-  menu.printDivider();
+  std::cout << "================================================================";
   person.printPokemon();
-  menu.printDivider();
+  std::cout << "================================================================";
 
   // srand(time(NULL));
 
@@ -61,7 +61,7 @@ int main() {
     // Create computer
     Computer computer(i);
     computer.printPokemon();
-    menu.printDivider();
+    std::cout << "================================================================";
     for (int i = 0; i < 3; i++) {
       person.pokemon[i].health = person.pokemon[i].baseHealth;
       person.pokemon[i].defense = person.pokemon[i].baseDefense;
@@ -84,7 +84,7 @@ int main() {
       battle.move(battleMenu.getChoice());
       battle.move();
       
-      menu.printDivider();
+      std::cout << "================================================================";
       person.printPokemon();
       computer.printPokemon();
     }

@@ -30,8 +30,3 @@ int Menu::getChoice() {
   }
   return choice;
 }
-void Menu::printDivider() {
-  std::cout
-      << "================================================================"
-      << std::endl;
-}
