@@ -1,7 +1,11 @@
 make:
-	g++ -std=c++11 -Wall Pokemon.cpp Player.cpp Person.cpp Computer.cpp main.cpp
+	g++ -std=c++11 -Wall Pokemon.cpp Player.cpp Person.cpp main.cpp
 	./a.out
 
 player:
 	g++ -std=c++11 -Wall Pokemon.cpp Player.cpp playerDriver.cpp
+	./a.out
+
+menu:
+	g++ -std=c++11 -Wall Menu.cpp menuDriver.cpp
 	./a.out
