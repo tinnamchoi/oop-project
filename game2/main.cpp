@@ -6,6 +6,7 @@
 
 using namespace std;
 
+#include "BattleMenu.h"
 #include "Computer.h"
 #include "Menu.h"
 #include "Person.h"
