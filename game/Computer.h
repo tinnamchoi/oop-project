@@ -9,8 +9,8 @@ class Computer : public Player {
   int currentPokemon = 0;
   // array of computer names
   std::string names[10] = {
-      "Computer 1", "Computer 2", "Computer 3", "Computer 4", "Computer 5",
-      "Computer 6", "Computer 7", "Computer 8", "Computer 9", "Computer 10"};
+      "Enemy Bryan", "Enemy Gregory", "Enemy Cassie", "Enemy Peter", "Enemy Rowley",
+      "Enemy Regina", "Enemy Steven", "Enemy Darcy", "Enemy Sarah", "Enemy Timothy"};
 };
 
 #endif
