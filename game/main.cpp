@@ -15,14 +15,6 @@ int main() {
   // Intro
   std::cout << "            ~~~ Welcome to the International World Pokemon Championship Tournament!! ~~~ \nYou will face off against a fierce array of deadly Pokemon, you must use your own collection of said Pokemon\nto battle it out and defeat all enemies! If you can manage this, you will be awarded the legendary Pokeball!!\n(not for use in Australia, North America, South America, Asia, Europe, Africa, or Antartica.) \n                               ~~~ You may now...BEGIN ~~~ \n";
 
-  // Initalise Pokemon
-  Pokemon pokemon0(0);
-  Pokemon pokemon1(1);
-  Pokemon pokemon2(2);
-  Pokemon pokemon3(3);
-  Pokemon pokemon4(4);
-  Pokemon pokemon5(5);
-
   // Create person
   Person person;
   std::cout << "Please enter your name: ";
@@ -31,8 +23,8 @@ int main() {
   // Get choices of the person
   int choice;
   Menu menu("Choose 3 Pokemon. Enter 0 to check information",
-            {pokemon0.getName(), pokemon1.getName(), pokemon2.getName(), pokemon3.getName(), pokemon4.getName(),
-             pokemon5.getName()});
+            {"Chilli-Dog", "Water-Bear", "Lettuce-Man", "Hot-Shot", "Ice-Ice-Baby",
+             "Leaf-Me-Alone"});
   for (int i = 0; i < 3; i++) {
     while (true) {
       switch (choice = menu.getChoice()) {

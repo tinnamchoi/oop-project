@@ -17,7 +17,6 @@ class Pokemon {
   int baseHealth;
   int health;
   Pokemon();
-  Pokemon(int id);
   void newPokemon(int id);
   std::string getName();
   std::string getType();

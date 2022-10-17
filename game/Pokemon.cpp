@@ -3,7 +3,8 @@
 #include <string>
 
 Pokemon::Pokemon() {}
-Pokemon::Pokemon(int id) {
+
+void Pokemon::newPokemon(int id) {
   this->id = id;
   level = 1;
   switch (id) {
@@ -49,57 +50,6 @@ Pokemon::Pokemon(int id) {
       break;
     case 5:
       name = "Leaf-Me-Alone";
-      type = 3;
-      baseHealth = 24;
-      attack = 2;
-      special = 4;
-      baseDefense = 8;
-      break;
-  }
-  defense = baseDefense;
-  health = baseHealth;
-}
-
-void Pokemon::newPokemon(int id) {
-  this->id = id;
-  level = 1;
-  switch (id) {
-    case 0:
-      type = 1;
-      baseHealth = 20;
-      attack = 4;
-      special = 5;
-      baseDefense = 5;
-      break;
-    case 1:
-      type = 2;
-      baseHealth = 18;
-      attack = 4;
-      special = 5;
-      baseDefense = 6;
-      break;
-    case 2:
-      type = 3;
-      baseHealth = 16;
-      attack = 5;
-      special = 6;
-      baseDefense = 5;
-      break;
-    case 3:
-      type = 1;
-      baseHealth = 20;
-      attack = 2;
-      special = 4;
-      baseDefense = 10;
-      break;
-    case 4:
-      type = 2;
-      baseHealth = 20;
-      attack = 2;
-      special = 5;
-      baseDefense = 7;
-      break;
-    case 5:
       type = 3;
       baseHealth = 24;
       attack = 2;
