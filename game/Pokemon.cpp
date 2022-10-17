@@ -57,17 +57,17 @@ void Pokemon::newPokemon(int id) {
 std::string Pokemon::getName() {
   switch (id) {
     case 0:
-      return "Pokemon 1";
+      return "Chilli-Dog";
     case 1:
-      return "Pokemon 2";
+      return "Water-Bear";
     case 2:
-      return "Pokemon 3";
+      return "Lettuce-Man";
     case 3:
-      return "Pokemon 4";
+      return "HotShot";
     case 4:
-      return "Pokemon 5";
+      return "Ice-Ice-Baby";
     case 5:
-      return "Pokemon 6";
+      return "Leaf-Me-Alone";
   }
   return "Error";
 }
