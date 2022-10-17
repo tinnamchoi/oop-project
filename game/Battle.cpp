@@ -22,8 +22,8 @@ int Battle::winState() {
 
 void Battle::moveAttack(Pokemon *attacker, Pokemon *defender) {
   int damage = attacker->attack - defender->defense;
-  if (damage < 0) {
-    damage = 0;
+  if (damage <= 0) {
+    damage = 1;
   }
   defender->health -= damage;
   std::cout << attacker->name << " attacks " << defender->name << " for "
@@ -31,8 +31,8 @@ void Battle::moveAttack(Pokemon *attacker, Pokemon *defender) {
 }
 void Battle::moveSpecial(Pokemon *attacker, Pokemon *defender) {
   int damage = attacker->special - defender->defense;
-  if (damage < 0) {
-    damage = 0;
+  if (damage <= 0) {
+    damage = 1;
   }
   // multiply or divide by 2 depending on type advantage which is represented as
   // an int if the 2 types are same
@@ -78,11 +78,22 @@ void Battle::move(int moveChoice) {
       break;
     case 4:
       // swap
-      Menu menu("Choose a Pokemon to start",
+      Menu menu("choose another pokemon",
                 {person->pokemon[0].name, person->pokemon[1].name,
                  person->pokemon[2].name});
-      moveSwap(menu.getChoice() - 1);
+      // if the pokemon is dead, don't let them choose it
+      int choice = menu.getChoice() - 1;
+      if (person->pokemon[choice].health <= 0) {
+        std::cout << "That pokemon is dead!" << std::endl;
+        move(4);
+      } else {
+        moveSwap(choice);
+      }
       break;
+  }
+  // if the computer's pokemon is dead, swap to the next one
+  if (computer->pokemon[computer->currentPokemon].health <= 0) {
+    computer->currentPokemon++;
   }
 }
 void Battle::move() {
@@ -102,6 +113,10 @@ void Battle::move() {
       // defend
       moveDefend(&computer->pokemon[computer->currentPokemon]);
       break;
+  }
+  // if the person's pokemon is dead, swap to the next one
+  if (person->pokemon[person->currentPokemon].health <= 0) {
+    move(4);
   }
 }
 
