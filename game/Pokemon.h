@@ -15,6 +15,7 @@ class Pokemon {
   int health;
   Pokemon();
   void newPokemon(int id);
+  void printStats();
 };
 
 #endif
