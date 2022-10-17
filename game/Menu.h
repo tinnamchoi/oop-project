@@ -19,6 +19,7 @@ class Menu {
   std::vector<std::string> getOptions();
 
   bool printMenu();
+  
 };
 
 #endif
