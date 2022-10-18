@@ -75,7 +75,7 @@ int main() {
     Battle battle(&person, &computer);
 
     // Choose an initial pokemon
-    Menu menu("Choose a Pokemon",
+    Menu menu("Choose a Pokemon to start the battle",
               {person.pokemon[0].getName(), person.pokemon[1].getName(),
                person.pokemon[2].getName()});
     int choice = menu.getChoice();
@@ -93,6 +93,8 @@ int main() {
         choice = menu.getChoice();
         person.swapPokemon(choice - 1);
       }
+      person.printPokemon();
+      computer.printPokemon();
     }
     battle.resetStats();
   }

@@ -1,0 +1,1719 @@
+Script started on 2022-10-20 11:35:04+10:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="207" LINES="10"]
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ clear
+[?2004l[H[2J[3J]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 0
+=======================================================================
+Professor Oak's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 3
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Ice-Ice-Baby  for 8 damage!
+Enemy Bryan's Ice-Ice-Baby  defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 1     | 12     | 2      | 5       | 3       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Ice-Ice-Baby  for 6 damage!
+Enemy Bryan's Ice-Ice-Baby  defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 1     | 6      | 2      | 5       | 4       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Ice-Ice-Baby  for 4 damage!
+Enemy Bryan's Ice-Ice-Baby  used a special attack on Deez's Lettuce-Man   for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 15     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 1     | 2      | 2      | 5       | 4       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Ice-Ice-Baby  for 4 damage!
+Enemy Bryan's Lettuce-Man   is now in battle!
+Enemy Bryan's Lettuce-Man   defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 2     | 17     | 7      | 8       | 4       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 1     | -2     | 2      | 5       | 4       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 3       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 4
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 2     | 17     | 7      | 8       | 4       |
+=======================================================================
+Which pokemon would you like to swap to?
+Number: 1
+Enemy Bryan's Lettuce-Man   attacked Deez's Chilli-Dog    for 3 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 17     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 2     | 17     | 7      | 8       | 4       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 1     | -2     | 2      | 5       | 4       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 3       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ [K[timothy@archSilver game]$ mak
+[?2004lbash: mak: command not found
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 0
+=======================================================================
+Professor Oak's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 3
+Deez swapped to Lettuce-Man  
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 0
+=======================================================================
+Professor Oak's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 3
+Deez'sLettuce-Man   is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 8 damage!
+Enemy Bryan's Water-Bear    used a special attack on Deez's Lettuce-Man   for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 15     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 10     | 4      | 5       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 8 damage!
+Enemy Bryan's Water-Bear    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 15     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 2      | 4      | 5       | 3       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 6 damage!
+Enemy Bryan's Ice-Ice-Baby  defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 2     | 17     | 7      | 8       | 4       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | -4     | 4      | 5       | 3       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 3       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Ice-Ice-Baby  for 10 damage!
+Enemy Bryan's Ice-Ice-Baby  defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 2     | 17     | 7      | 8       | 4       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | -4     | 4      | 5       | 3       |
+| Ice-Ice-Baby  | Water | 1     | 10     | 2      | 5       | 4       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ clear
+[?2004l[H[2J[3J]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 0
+=======================================================================
+Professor Oak's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 3
+Deez's Lettuce-Man   is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 8 damage!
+Enemy Bryan's Water-Bear    used a special attack on Deez's Lettuce-Man   for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 15     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 10     | 4      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 8 damage!
+Enemy Bryan's Water-Bear    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 15     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 2      | 4      | 5       | 3       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 6 damage!
+Enemy Bryan's Leaf-Me-Alone is now in battle!
+Enemy Bryan's Water-Bear    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 2     | 17     | 7      | 8       | 4       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | -4     | 4      | 5       | 4       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 8 damage!
+Enemy Bryan's Leaf-Me-Alone is now in battle!
+Enemy Bryan's Water-Bear    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 3     | 19     | 9      | 10      | 6       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | -12    | 4      | 5       | 5       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: ^[`   ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ clear
+[?2004l[H[2J[3J]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ am[K[Kmake
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 0
+=======================================================================
+Professor Oak's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 6 damage!
+Enemy Bryan's Chilli-Dog    used a special attack on Deez's Water-Bear    for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 17     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 14     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 6 damage!
+Enemy Bryan's Chilli-Dog    used a special attack on Deez's Water-Bear    for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 16     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 8      | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 6 damage!
+Enemy Bryan's Chilli-Dog    used a special attack on Deez's Water-Bear    for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 15     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 2      | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 6 damage!
+Enemy Bryan's Lettuce-Man   is now in battle!
+Enemy Bryan's Chilli-Dog    attacked Deez's Water-Bear    for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 2     | 16     | 6      | 7       | 4       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | -4     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 10 damage!
+Enemy Bryan's Lettuce-Man   is now in battle!
+Enemy Bryan's Chilli-Dog    used a special attack on Deez's Water-Bear    for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 3     | 17     | 8      | 9       | 6       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | -14    | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 0
+=======================================================================
+Professor Oak's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 6 damage!
+Enemy Bryan's Chilli-Dog    used a special attack on Deez's Water-Bear    for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 17     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 14     | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 6 damage!
+Enemy Bryan's Chilli-Dog    attacked Deez's Water-Bear    for 2 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 15     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 8      | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 6 damage!
+Enemy Bryan's Chilli-Dog    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 15     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 2      | 4      | 5       | 3       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 4 damage!
+Enemy Bryan's Chilli-Dog    is now in battle!
+Enemy Bryan's Chilli-Dog    used a special attack on Deez's Water-Bear    for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 2     | 16     | 6      | 7       | 4       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | -2     | 4      | 5       | 3       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 8 damage!
+Enemy Bryan's Chilli-Dog    is now in battle!
+Enemy Bryan's Chilli-Dog    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 3     | 18     | 8      | 9       | 6       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | -10    | 4      | 5       | 4       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 10 damage!
+Enemy Bryan's Chilli-Dog    is now in battle!
+Enemy Bryan's Chilli-Dog    attacked Deez's Water-Bear    for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 4     | 19     | 10     | 11      | 8       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | -20    | 4      | 5       | 4       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 14 damage!
+Enemy Bryan's Chilli-Dog    is now in battle!
+Enemy Bryan's Chilli-Dog    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 5     | 21     | 12     | 13      | 10      |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | -34    | 4      | 5       | 5       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Bryan's Chilli-Dog    for 16 damage!
+Enemy Bryan's Chilli-Dog    is now in battle!
+Enemy Bryan's Chilli-Dog    attacked Deez's Water-Bear    for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 6     | 22     | 14     | 15      | 12      |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | -50    | 4      | 5       | 5       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 0
+=======================================================================
+Professor Oak's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 0
+=======================================================================
+Professor Oak's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 3
+Deez's Lettuce-Man   is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 8 damage!
+Enemy Bryan's Water-Bear    attacked Deez's Lettuce-Man   for 2 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 14     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 10     | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 8 damage!
+Enemy Bryan's Water-Bear    used a special attack on Deez's Lettuce-Man   for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 13     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 2      | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 8 damage!
+Enemy Bryan's Chilli-Dog    is now in battle!
+Enemy Bryan's Water-Bear    used a special attack on Deez's Lettuce-Man   for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 2     | 14     | 7      | 8       | 4       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | -6     | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 2
+11053884401
+11
+Deez's Water-Bear    is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: 1
+Welcome, 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+Deez./a.out
+Enter your name: Deez
+Welcome, DeezDeez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 0
+=======================================================================
+Professor Oak's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+DeezDeez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 3
+1365042162
+22
+DeezDeez's Lettuce-Man   is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:~/a1846390/Courses/2022-Sem2/COMP SCI 1102/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+-1295850600 0
+0 0
+Deez's Chilli-Dog    is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Chilli-Dog    used a special attack on Enemy Bryan's Lettuce-Man   for 6 damage!
+Enemy Bryan's Lettuce-Man   used a special attack on Deez's Chilli-Dog    for 2 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 18     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 10     | 5      | 6       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Chilli-Dog    used a special attack on Enemy Bryan's Lettuce-Man   for 6 damage!
+Enemy Bryan's Lettuce-Man   used a special attack on Deez's Chilli-Dog    for 2 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 16     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 4      | 5      | 6       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 3
+Deez's Chilli-Dog    defended!
+Enemy Bryan's Lettuce-Man   defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 16     | 4      | 5       | 3       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 4      | 5      | 6       | 3       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Chilli-Dog    used a special attack on Enemy Bryan's Lettuce-Man   for 4 damage!
+0 1
+1 1
+Enemy Bryan's Water-Bear    is now in battle!
+Enemy Bryan's Water-Bear    used a special attack on Deez's Chilli-Dog    for 1 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 2     | 17     | 6      | 7       | 5       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 0      | 5      | 6       | 3       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 4
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 2     | 17     | 6      | 7       | 5       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+Which pokemon would you like to swap to?
+Number: 3
+0 2
+2 2
+Deez's Lettuce-Man   is now in battle!
+Enemy Bryan's Water-Bear    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 2     | 17     | 6      | 7       | 5       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 0      | 5      | 6       | 3       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 3       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 6 damage!
+Enemy Bryan's Water-Bear    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 2     | 17     | 6      | 7       | 5       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 0      | 5      | 6       | 3       |
+| Water-Bear    | Water | 1     | 12     | 4      | 5       | 4       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Lettuce-Man   used a special attack on Enemy Bryan's Water-Bear    for 4 damage!
+Enemy Bryan's Water-Bear    attacked Deez's Lettuce-Man   for 2 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 2     | 17     | 6      | 7       | 5       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 14     | 5      | 6       | 2       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 0      | 5      | 6       | 3       |
+| Water-Bear    | Water | 1     | 8      | 4      | 5       | 4       |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+=======================================================================
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 3
+Deez's Lettuce-Man   defended!
+Enemy Bryan's Water-Bear    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 2     | 17     | 6      | 7       | 5       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 14     | 5      | 6       | 3       |
+=======================================================================
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 0      | 5      | 6  

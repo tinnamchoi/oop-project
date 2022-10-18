@@ -9,5 +9,7 @@ bool Player::swapPokemon(int newPokemon) {
     return false;
   }
   currentPokemon = newPokemon;
+  cout << name << "'s " << pokemon[currentPokemon].getName()
+       << " is now in battle!" << endl;
   return true;
 }

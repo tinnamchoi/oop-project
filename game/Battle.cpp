@@ -106,10 +106,7 @@ void Battle::move(int moveChoice) {
   }
   if (computer->pokemon[computer->currentPokemon].health <= 0) {
     person->pokemon[person->currentPokemon].levelUp();
-    computer->currentPokemon += 1;
-    cout << computer->name << "'s "
-         << computer->pokemon[computer->currentPokemon].getName()
-         << " is now in battle!" << endl;
+    computer->swapPokemon((computer->currentPokemon) + 1);
   }
 }
 void Battle::move() {

@@ -1,6 +1,7 @@
 #include "Computer.h"
 
 Computer::Computer(int landmark) {
+  currentPokemon = 0;
   name = names[landmark];
   for (int i = 0; i < 3; i++) {
     pokemon.push_back(Pokemon());
