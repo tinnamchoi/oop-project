@@ -21,6 +21,8 @@ int main() {
   // Create a Person object
   Person person;
 
+  int landmark = 0;
+
   // ask if the user wants to load "backup.txt"
   cout << "Do you want to load a save file? (y/n): ";
   char loadSave;
@@ -41,6 +43,7 @@ int main() {
         person.pokemon[i].levelUp();
       }
     }
+    backup >> landmark;
     backup.close();
     goto skipIntro;
   }
@@ -91,7 +94,15 @@ skipIntro:;
   person.printPokemon();
 
   // Main loop
-  for (int i = 0; i < 10; i++) {
+  for (int i = landmark; i < 10; i++) {
+    // Save to "backup.txt"
+    ofstream backup("backup.txt");
+    backup << person.name << endl;
+    for (int i = 0; i < 3; i++) {
+      backup << person.pokemon[i].id << endl << person.pokemon[i].level << endl;
+    }
+    backup << i;
+    
     // Create a Computer object
     Computer computer(i);
     cout << "You are at " << computer.name << endl;
@@ -125,7 +136,6 @@ skipIntro:;
       computer.printPokemon();
     }
     battle.resetStats();
-    
   }
 
   return 0;
