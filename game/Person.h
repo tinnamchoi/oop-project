@@ -8,7 +8,6 @@
 
 class Person : public Player {
  public:
-  std::string name;
   Person();
 };
 

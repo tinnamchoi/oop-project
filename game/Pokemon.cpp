@@ -4,10 +4,10 @@
 
 Pokemon::Pokemon() {}
 void Pokemon::newPokemon(int id) {
+  this->id = id;
   level = 1;
   switch (id) {
     case 0:
-      name = "Pokemon 1";
       type = 1;
       baseHealth = 3;
       attack = 2;
@@ -15,7 +15,6 @@ void Pokemon::newPokemon(int id) {
       baseDefense = 4;
       break;
     case 1:
-      name = "Pokemon 2";
       type = 2;
       baseHealth = 5;
       attack = 2;
@@ -23,7 +22,6 @@ void Pokemon::newPokemon(int id) {
       baseDefense = 1;
       break;
     case 2:
-      name = "Pokemon 3";
       type = 3;
       baseHealth = 2;
       attack = 3;
@@ -31,7 +29,6 @@ void Pokemon::newPokemon(int id) {
       baseDefense = 3;
       break;
     case 3:
-      name = "Pokemon 4";
       type = 1;
       baseHealth = 3;
       attack = 5;
@@ -39,7 +36,6 @@ void Pokemon::newPokemon(int id) {
       baseDefense = 3;
       break;
     case 4:
-      name = "Pokemon 5";
       type = 2;
       baseHealth = 3;
       attack = 2;
@@ -47,7 +43,6 @@ void Pokemon::newPokemon(int id) {
       baseDefense = 5;
       break;
     case 5:
-      name = "Pokemon 6";
       type = 3;
       baseHealth = 4;
       attack = 2;
@@ -78,7 +73,7 @@ std::string Pokemon::getName() {
 std::string Pokemon::getType() {
   switch (type) {
     case 1:
-      return "Fire";
+      return "Fire ";
     case 2:
       return "Water";
     case 3:
@@ -87,7 +82,8 @@ std::string Pokemon::getType() {
 }
 
 void Pokemon::printStats(std::string playerName) {
-  std::cout << playerName << "'s" << getName() << " " << getType() << " "
-            << level << " " << health << " " << defense << " " << attack << " "
-            << special << std::endl;
+  std::cout << playerName << "'s " << getName() << std::endl;
+  std::cout << "Type  Level Health Attack Special Defense" << std::endl;
+  std::cout << getType() << " " << level << "     " << health << "      " << attack << "      "
+            << special << "       " << defense << std::endl << std::endl;
 }

@@ -1,6 +1,6 @@
 #include "Menu.h"
-#include <limits>
 
+#include <limits>
 
 Menu::Menu() {
   title = "Default Title";
@@ -29,4 +29,9 @@ int Menu::getChoice() {
     std::cout << "Invalid input; please re-enter.\n";
   }
   return choice;
+}
+void Menu::printDivider() {
+  std::cout
+      << "================================================================"
+      << std::endl;
 }
