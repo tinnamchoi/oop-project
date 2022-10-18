@@ -6,6 +6,7 @@
 
 using namespace std;
 
+#include "Battle.h"
 #include "BattleMenu.h"
 #include "Computer.h"
 #include "Menu.h"
@@ -69,7 +70,11 @@ int main() {
     // Print the computer's pokemon
     computer.printPokemon();
 
-    // Battle
+    // Create a Battle object
+    Battle battle(&person, &computer);
+
+    // Battle loop
+    
   }
 
   return 0;

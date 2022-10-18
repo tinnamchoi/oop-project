@@ -14,6 +14,7 @@ class Player {
   // Variables
   string name;
   vector<Pokemon> pokemon;
+  int currentPokemon;
   
   // Printers
   void printPokemon();
