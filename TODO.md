@@ -22,7 +22,7 @@
 - [x] Another object can print or display the state of an object on the screen. 
 - [x] An end-user can change the state of an object. 
 - [x] Can store and recall multiple entries of data/objects, such as in a database or game stats.	
-- [ ] Can Write/Read data from a file. Save a game checkpoint or backup data to a database or file.	
+- [x] Can Write/Read data from a file. Save a game checkpoint or backup data to a database or file.	
 - [x] Has an intuitive and functional user menu. 
 - [x] It is interactive by giving feedback to the user and receiving input from the user	
 
@@ -35,5 +35,5 @@
 - [x] It runs without crashing or going into infinite loops even when the tutor attempts to break it (reasonably)
 - [x] Validates user input correctly - accepts only correct inputs.
 - [x] The end product matches your plan document accurately without many significant design changes.
-- [ ] Uses dynamic/heap memory to store a variable amount of data correctly.
+- [x] Uses dynamic/heap memory to store a variable amount of data correctly.
 - [ ] Usefully allocates memory from the heap using `new` and is correctly freed with `delete`	
