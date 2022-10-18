@@ -31,6 +31,7 @@ int main() {
       choice = menu.getChoice();
       switch (choice) {
         case 0: {
+          // Display information
           Player player;
           player.name = "Professor Oak";
           player.pokemon.push_back(Pokemon());
@@ -85,9 +86,13 @@ int main() {
     while (winState == 0) {
       // Create a BattleMenu object
       BattleMenu battleMenu;
-      int test = battleMenu.getChoice();
-      cout << test << endl;
-      battle.move(test);
+      battle.move(battleMenu.getChoice());
+      battle.move();
+      winState = battle.winState();
+      if (person.pokemon[person.currentPokemon].health <= 0) {
+        choice = menu.getChoice();
+        person.swapPokemon(choice - 1);
+      }
     }
     battle.resetStats();
   }
