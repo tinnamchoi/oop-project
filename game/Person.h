@@ -6,6 +6,8 @@
 class Person : public Player {
  public:
   Person();
+  void setName();
+  void setName(string);
 };
 
 #endif
