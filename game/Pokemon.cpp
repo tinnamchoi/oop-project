@@ -1,15 +1,18 @@
 #include "Pokemon.h"
 
-#include <string>
+using namespace std;
 
-Pokemon::Pokemon() {}
+// Constructor
+Pokemon::Pokemon() {
+  experience = 0;
+  level = 1;
+}
 
+// Setters
 void Pokemon::newPokemon(int id) {
   this->id = id;
-  level = 1;
   switch (id) {
     case 0:
-      name = "Chilli-Dog";
       type = 1;
       baseHealth = 20;
       attack = 4;
@@ -17,15 +20,13 @@ void Pokemon::newPokemon(int id) {
       baseDefense = 2;
       break;
     case 1:
-      name = "Water-Bear";
       type = 2;
       baseHealth = 18;
       attack = 4;
       special = 5;
-      baseDefense = 3;
+      baseDefense = 2;
       break;
     case 2:
-      name = "Lettuce-Man";
       type = 3;
       baseHealth = 16;
       attack = 5;
@@ -33,39 +34,65 @@ void Pokemon::newPokemon(int id) {
       baseDefense = 2;
       break;
     case 3:
-      name = "Hot-Shot";
       type = 1;
       baseHealth = 20;
       attack = 2;
       special = 4;
-      baseDefense = 4;
+      baseDefense = 2;
       break;
     case 4:
-      name = "Ice-Ice-Baby";
       type = 2;
       baseHealth = 20;
       attack = 2;
       special = 5;
-      baseDefense = 3;
+      baseDefense = 2;
       break;
     case 5:
-      name = "Leaf-Me-Alone";
       type = 3;
       baseHealth = 24;
       attack = 2;
       special = 4;
-      baseDefense = 3;
+      baseDefense = 2;
       break;
   }
   defense = baseDefense;
   health = baseHealth;
 }
-
-std::string Pokemon::getName() {
-  return name;
+void Pokemon::resetStats() {
+  defense = baseDefense;
+  health = baseHealth;
+}
+void Pokemon::levelUp() {
+  level++;
+  experience = 0;
+  // Multiply stats by 2
+  baseHealth += 2;
+  health += 2;
+  attack += 2;
+  special += 2;
+  baseDefense += 2;
+  defense += 2;
 }
 
-std::string Pokemon::getType() {
+// Getters
+string Pokemon::getName() {
+  switch (id) {
+    case 0:
+      return "Chilli-Dog   ";
+    case 1:
+      return "Water-Bear   ";
+    case 2:
+      return "Lettuce-Man  ";
+    case 3:
+      return "HotShot      ";
+    case 4:
+      return "Ice-Ice-Baby ";
+    case 5:
+      return "Leaf-Me-Alone";
+  }
+  return "Error";
+}
+string Pokemon::getType() {
   switch (type) {
     case 1:
       return "Fire ";
@@ -75,11 +102,4 @@ std::string Pokemon::getType() {
       return "Grass";
   }
   return "Error";
-}
-
-void Pokemon::printStats(std::string playerName) {
-  std::cout << name << std::endl;
-  std::cout << "Type  Level Health Attack Special Defense" << std::endl;
-  std::cout << getType() << " " << level << "     " << health << "      " << attack << "      "
-            << special << "       " << defense << std::endl << std::endl;
 }

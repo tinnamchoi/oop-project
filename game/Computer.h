@@ -7,10 +7,10 @@ class Computer : public Player {
  public:
   Computer(int landmark);
   int currentPokemon = 0;
-  // array of computer names
-  std::string names[10] = {
-      "Enemy Bryan", "Enemy Gregory", "Enemy Cassie", "Enemy Peter", "Enemy Rowley",
-      "Enemy Regina", "Enemy Steven", "Enemy Darcy", "Enemy Sarah", "Enemy Timothy"};
+  std::string names[10] = {"Enemy Bryan",  "Enemy Gregory", "Enemy Cassie",
+                           "Enemy Peter",  "Enemy Rowley",  "Enemy Regina",
+                           "Enemy Steven", "Enemy Darcy",   "Enemy Sarah",
+                           "Enemy Timothy"};
 };
 
 #endif

@@ -1,3 +1,6 @@
 #include "Person.h"
 
-Person::Person() {}
+Person::Person() {
+  cout << "Enter your name: ";
+  cin >> name;
+}

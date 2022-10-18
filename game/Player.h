@@ -1,19 +1,17 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include <iostream>
-#include <string>
+#include "Trainer.h"
 
-#include "Pokemon.h"
+using namespace std;
 
-// main class for computer and person
-class Player {
+class Player : public Trainer {
  public:
-  std::string name;
-  Pokemon pokemon[3];  // this allows player 3 pokemon choices
-  Player();
+  // Variables
   int currentPokemon;
-  void printPokemon();
+  
+  // Functions
+  bool swapPokemon(int);
 };
 
 #endif

@@ -1,6 +1,10 @@
+#include <stdlib.h>
+#include <time.h>
+
 #include <iostream>
-#include <limits>
 #include <string>
+
+using namespace std;
 
 #include "Battle.h"
 #include "BattleMenu.h"
@@ -11,38 +15,43 @@
 #include "Pokemon.h"
 
 int main() {
+  srand(time(NULL));
 
-  // Intro
-  std::cout << "            ~~~ Welcome to the International World Pokemon Championship Tournament!! ~~~ \nYou will face off against a fierce array of deadly Pokemon, you must use your own collection of said Pokemon\nto battle it out and defeat all enemies! If you can manage this, you will be awarded the legendary Pokeball!!\n(not for use in Australia, North America, South America, Asia, Europe, Africa, or Antartica.) \n                               ~~~ You may now...BEGIN ~~~ \n";
-
-  // Create person
+  // Create a Person object
   Person person;
-  std::cout << "Please enter your name: ";
-  std::cin >> person.name;
+  cout << "Welcome, " << person.name << endl;
 
   // Get choices of the person
   int choice;
   Menu menu("Choose 3 Pokemon. Enter 0 to check information",
-            {"Chilli-Dog", "Water-Bear", "Lettuce-Man", "Hot-Shot", "Ice-Ice-Baby",
-             "Leaf-Me-Alone"});
+            {"Chilli-Dog", "Water-Bear", "Lettuce-Man", "HotShot",
+             "Ice-Ice-Baby", "Leaf-Me-Alone"});
   for (int i = 0; i < 3; i++) {
     while (true) {
-      switch (choice = menu.getChoice()) {
-        case 0:
-          // print information about pokemon
-          std::cout << "================================================================\n";
-          std::cout << "Name:           Type:     Health: Attack: Special: Defense:"
-                    << std::endl;
-          std::cout << "Chilli-Dog      Fire      20      4       5        2" << std::endl;
-          std::cout << "Water-Bear      Water     18      4       5        3" << std::endl;
-          std::cout << "Lettuce-Man     Grass     16      5       6        2" << std::endl;
-          std::cout << "Hot-Shot        Fire      20      2       4        4" << std::endl;
-          std::cout << "Ice-Ice-Baby    Water     20      2       5        3" << std::endl;
-          std::cout << "Leaf-Me-Alone   Grass     24      2       4        3" << std::endl;
-          std::cout << "================================================================\n";
+      choice = menu.getChoice();
+      switch (choice) {
+        case 0: {
+          // Display information
+          Player player;
+          player.name = "Professor Oak";
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[0].newPokemon(0);
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[1].newPokemon(1);
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[2].newPokemon(2);
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[3].newPokemon(3);
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[4].newPokemon(4);
+          player.pokemon.push_back(Pokemon());
+          player.pokemon[5].newPokemon(5);
+          player.printPokemon();
           break;
+        }
         case 1 ... 6:
           // add pokemon to person's pokemon array
+          person.pokemon.push_back(Pokemon());
           person.pokemon[i].newPokemon(choice - 1);
           goto chose;
       }
@@ -50,59 +59,43 @@ int main() {
   chose:;
   }
 
-  // Print person's pokemon
-  std::cout << std::endl;
-  std::cout << "================================================================\n";
-  std::cout << person.name << "'s Pokemon:\n\n";
+  // Print the person's pokemon
   person.printPokemon();
-  std::cout << "================================================================\n\n";
 
-  // srand(time(NULL));
-
+  // Main loop
   for (int i = 0; i < 10; i++) {
-    // Announce round number
-    std::cout << "Round " << i + 1 << std::endl << std::endl;
-
-    // Create computer
+    // Create a Computer object
     Computer computer(i);
-    std::cout << "Enemy's Pokemon:\n\n";
+    cout << "You are at " << computer.name << endl;
+
+    // Print the computer's pokemon
     computer.printPokemon();
-    std::cout << "================================================================";
-    for (int i = 0; i < 3; i++) {
-      person.pokemon[i].health = person.pokemon[i].baseHealth;
-      person.pokemon[i].defense = person.pokemon[i].baseDefense;
 
-      computer.pokemon[i].health = computer.pokemon[i].baseHealth;
-      computer.pokemon[i].defense = computer.pokemon[i].baseDefense;
-    }
-
-    // Battle
+    // Create a Battle object
     Battle battle(&person, &computer);
 
-    // Let player choose pokemon before battle
-    Menu menu("Choose a Pokemon to start",
+    // Choose an initial pokemon
+    Menu menu("Choose a Pokemon",
               {person.pokemon[0].getName(), person.pokemon[1].getName(),
                person.pokemon[2].getName()});
-    battle.moveSwap(menu.getChoice() - 1);
+    int choice = menu.getChoice();
+    person.swapPokemon(choice - 1);
 
-    while (battle.winState() == 0) {
+    // Battle loop
+    int winState = battle.winState();
+    while (winState == 0) {
+      // Create a BattleMenu object
       BattleMenu battleMenu;
       battle.move(battleMenu.getChoice());
       battle.move();
-      
-      std::cout << "================================================================\n";
-      person.printPokemon();
-      computer.printPokemon();
+      winState = battle.winState();
+      if (person.pokemon[person.currentPokemon].health <= 0) {
+        choice = menu.getChoice();
+        person.swapPokemon(choice - 1);
+      }
     }
-    if (battle.winState() == 1) {
-      i--;
-    }
+    battle.resetStats();
   }
-
-  // Lose message
-  std::cout << "Unfortunately, all of your Pokemon have perished in battle.\nYOU LOSE.\n";
-  // Win message
-  std::cout << "CONGRATULATIONS!!! You have officially been crowned the winner!!! Well done!\nYou will receive your Legendary Pokemon in the mail within the next [INSERT TRANSIT TIME HERE 01010111001] business days! Do enjoy!\n" << std::endl;
 
   return 0;
 }

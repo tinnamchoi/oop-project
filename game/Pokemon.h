@@ -4,11 +4,14 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Pokemon {
  public:
-  std::string name;
+  // Variables
   int id;
   int type;
+  int experience;
   int level;
   int attack;
   int special;
@@ -16,11 +19,18 @@ class Pokemon {
   int defense;
   int baseHealth;
   int health;
+  
+  // Constructor
   Pokemon();
+  
+  // Setters
   void newPokemon(int id);
-  std::string getName();
-  std::string getType();
-  void printStats(std::string playerName);
+  void resetStats();
+  void levelUp();
+  
+  // Getters
+  string getName();
+  string getType();
 };
 
 #endif

@@ -5,14 +5,21 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 class Menu {
  public:
-  std::string title;
-  std::vector<std::string> options;
-  
-  Menu(std::string title, std::vector<std::string> options);
+  // Variables
+  string title;
+  vector<string> options;
 
+  // Constructor
+  Menu(string title, vector<string> options);
+
+  // Print the menu
   bool printMenu();
+  
+  // Get the user's choice
   int getChoice();
 };
 
