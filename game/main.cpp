@@ -11,6 +11,7 @@
 #include "Pokemon.h"
 
 int main() {
+
   // Create person
   Person person;
   std::cout << "What's your name?" << std::endl;
@@ -19,14 +20,14 @@ int main() {
   // Get choices of the person
   int choice;
   Menu menu("Choose 3 Pokemon. Enter 0 to check information",
-            {"Pokemon 1", "Pokemon 2", "Pokemon 3", "Pokemon 4", "Pokemon 5",
-             "Pokemon 6"});
+            {"Chilli-Dog", "Water-Bear", "Lettuce-Man", "HotShot", "Ice-Ice-Baby",
+             "Leaf-Me-Alone"});
   for (int i = 0; i < 3; i++) {
     while (true) {
       switch (choice = menu.getChoice()) {
         case 0:
           // print information about pokemon
-          std::cout << "================================================================";
+          std::cout << "================================================================\n";
           std::cout << "Name       Type Health Attack Special Defense"
                     << std::endl;
           std::cout << "Pokemon 1  1    3      2      3       4" << std::endl;
