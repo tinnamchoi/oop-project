@@ -13,7 +13,7 @@
 ## Essential Features (10 points each)	
 
 - [x] Has more than 5 classes
-- [ ] Has inheritance with at least three levels A-->B-->C
+- [x] Has inheritance with at least three levels A-->B-->C
 - [x] Has demonstratable use of polymorphism
 - [x] Has abstract classes	
 
@@ -23,17 +23,17 @@
 - [x] An end-user can change the state of an object. 
 - [x] Can store and recall multiple entries of data/objects, such as in a database or game stats.	
 - [ ] Can Write/Read data from a file. Save a game checkpoint or backup data to a database or file.	
-- [ ] Has an intuitive and functional user menu. 
+- [x] Has an intuitive and functional user menu. 
 - [x] It is interactive by giving feedback to the user and receiving input from the user	
 
 ## Non-Functional Feature (5 points each)
 
-- [ ] well-commented code with function comments in the headers
-- [ ] Consistently well-named, well organised, correctly indented code
-- [ ] Test a good portion of your program in a structured way with evidence - unit testing, organised input/output testing
+- [x] well-commented code with function comments in the headers
+- [x] Consistently well-named, well organised, correctly indented code
+- [x] Test a good portion of your program in a structured way with evidence - unit testing, organised input/output testing
 - [x] Makefile builds the program.
-- [ ] It runs without crashing or going into infinite loops even when the tutor attempts to break it (reasonably)
+- [x] It runs without crashing or going into infinite loops even when the tutor attempts to break it (reasonably)
 - [x] Validates user input correctly - accepts only correct inputs.
-- [ ] The end product matches your plan document accurately without many significant design changes.
+- [x] The end product matches your plan document accurately without many significant design changes.
 - [ ] Uses dynamic/heap memory to store a variable amount of data correctly.
 - [ ] Usefully allocates memory from the heap using `new` and is correctly freed with `delete`	

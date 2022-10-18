@@ -10,7 +10,6 @@ class Menu {
   std::string title;
   std::vector<std::string> options;
   
-  Menu();
   Menu(std::string title, std::vector<std::string> options);
 
   bool printMenu();
