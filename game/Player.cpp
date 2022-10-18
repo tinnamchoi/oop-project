@@ -13,3 +13,6 @@ bool Player::swapPokemon(int newPokemon) {
        << " is now in battle!" << endl;
   return true;
 }
+void Player::setName(string name) {
+  this->name = name;
+}

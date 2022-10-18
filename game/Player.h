@@ -12,6 +12,9 @@ class Player : public Trainer {
   
   // Functions
   bool swapPokemon(int);
+  
+  // virtual function for setname
+  virtual void setName(string name);
 };
 
 #endif
