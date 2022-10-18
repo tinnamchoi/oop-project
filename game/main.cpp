@@ -137,6 +137,8 @@ skipIntro:;
     }
     battle.resetStats();
   }
+  
+  cout << "You have arrived at Mount Fuji!" << endl;
 
   return 0;
 }
