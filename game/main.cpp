@@ -62,6 +62,13 @@ int main() {
     Computer computer(i);
     computer.printPokemon();
     menu.printDivider();
+    for (int i = 0; i < 3; i++) {
+      person.pokemon[i].health = person.pokemon[i].baseHealth;
+      person.pokemon[i].defense = person.pokemon[i].baseDefense;
+
+      computer.pokemon[i].health = computer.pokemon[i].baseHealth;
+      computer.pokemon[i].defense = computer.pokemon[i].baseDefense;
+    }
 
     // Battle
     Battle battle(&person, &computer);
@@ -76,20 +83,17 @@ int main() {
       BattleMenu battleMenu;
       battle.move(battleMenu.getChoice());
       battle.move();
-      // print health of all pokemon
-      std::cout << std::endl << "Health:" << std::endl;
-      for (int j = 0; j < 3; j++) {
-        std::cout << person.pokemon[j].getName() << " "
-                  << person.pokemon[j].health << std::endl;
-      }
-      for (int j = 0; j < 3; j++) {
-        std::cout << computer.pokemon[j].getName() << " "
-                  << computer.pokemon[j].health << std::endl;
-      }
+      
+      menu.printDivider();
+      person.printPokemon();
+      computer.printPokemon();
+    }
+    if (battle.winState() == 1) {
+      i--;
     }
   }
 
-  std::cout << "You won!" << std::endl;
-  
+  std::cout << "End of the Game!" << std::endl;
+
   return 0;
 }
