@@ -22,13 +22,11 @@ int Battle::winState() {
   if (person->pokemon[0].health <= 0 && person->pokemon[1].health <= 0 &&
       person->pokemon[2].health <= 0) {
     std::cout << "You lose!" << std::endl;
-    resetStats();
     return 1;
   }
   if (computer->pokemon[0].health <= 0 && computer->pokemon[1].health <= 0 &&
       computer->pokemon[2].health <= 0) {
     std::cout << "You win!" << std::endl;
-    resetStats();
     return 2;
   }
   return 0;
