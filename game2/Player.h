@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 #include "Pokemon.h"
 
@@ -12,7 +13,7 @@ class Player {
  public:
   // Variables
   string name;
-  Pokemon pokemon[3];
+  vector<Pokemon> pokemon;
   
   // Printers
   void printPokemon();
