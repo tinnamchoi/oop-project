@@ -12,7 +12,8 @@
 
 int main() {
   Person person;
-  person.setName("John");
+  std::cout << "What's your name?" << std::endl;
+  std::cin >> person.name;
 
   int choice;
   for (int i = 0; i < 3; i++) {
@@ -24,15 +25,18 @@ int main() {
       switch (choice = menu.getChoice()) {
         case 0:
           // print information about pokemon
-          std::cout << "================================" << std::endl;
-          std::cout << "Name       Attack" << std::endl;
-          std::cout << "Pokemon 1  49" << std::endl;
-          std::cout << "Pokemon 2  52" << std::endl;
-          std::cout << "Pokemon 3  48" << std::endl;
-          std::cout << "Pokemon 4  55" << std::endl;
-          std::cout << "Pokemon 5  55" << std::endl;
-          std::cout << "Pokemon 6  99" << std::endl;
-          std::cout << "================================" << std::endl;
+          std::cout << "============================================="
+                    << std::endl;
+          std::cout << "Name       Type Health Attack Special Defense"
+                    << std::endl; 
+          std::cout << "Pokemon 1  1    3      2      3       4" << std::endl;
+          std::cout << "Pokemon 2  2    5      2      4       1" << std::endl;
+          std::cout << "Pokemon 3  3    2      3      4       3" << std::endl;
+          std::cout << "Pokemon 4  1    3      5      1       3" << std::endl;
+          std::cout << "Pokemon 5  2    3      2      2       5" << std::endl;
+          std::cout << "Pokemon 6  3    4      2      4       2" << std::endl;
+          std::cout << "============================================="
+                    << std::endl;
           break;
         case 1 ... 6:
           // add pokemon to person's pokemon array
@@ -47,8 +51,7 @@ int main() {
   // print all pokemon names and stats
   for (int i = 0; i < 3; i++) {
     std::cout << person.pokemon[i].name << " " << person.pokemon[i].level << " "
-              << person.pokemon[i].baseHealth << " " << person.pokemon[i].health
-              << " " << person.pokemon[i].baseDefense << " "
+              << " " << person.pokemon[i].health << " "
               << person.pokemon[i].defense << " " << person.pokemon[i].attack
               << " " << person.pokemon[i].special << std::endl;
   }
