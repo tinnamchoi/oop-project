@@ -11,10 +11,12 @@
 #include "Pokemon.h"
 
 int main() {
+  // Create person
   Person person;
   std::cout << "What's your name?" << std::endl;
   std::cin >> person.name;
 
+  // Get choices of the person
   int choice;
   Menu menu("Choose 3 Pokemon. Enter 0 to check information",
             {"Pokemon 1", "Pokemon 2", "Pokemon 3", "Pokemon 4", "Pokemon 5",
@@ -44,6 +46,7 @@ int main() {
   chose:;
   }
 
+  // Print person's pokemon
   std::cout << std::endl;
   menu.printDivider();
   person.printPokemon();
@@ -86,5 +89,7 @@ int main() {
     }
   }
 
+  std::cout << "You won!" << std::endl;
+  
   return 0;
 }
