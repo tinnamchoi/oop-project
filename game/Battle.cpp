@@ -26,7 +26,7 @@ void Battle::moveAttack(Pokemon *attacker, Pokemon *defender) {
     damage = 1;
   }
   defender->health -= damage;
-  std::cout << attacker->name << " attacks " << defender->name << " for "
+  std::cout << attacker->getName() << " attacks " << defender->getName() << " for "
             << damage << " damage!" << std::endl;
 }
 void Battle::moveSpecial(Pokemon *attacker, Pokemon *defender) {
@@ -47,16 +47,16 @@ void Battle::moveSpecial(Pokemon *attacker, Pokemon *defender) {
     damage *= 2;
   }
   defender->health -= damage;
-  std::cout << attacker->name << " uses a special attack on " << defender->name
+  std::cout << attacker->getName() << " uses a special attack on " << defender->getName()
             << " for " << damage << " damage!" << std::endl;
 }
 void Battle::moveDefend(Pokemon *attacker) {
   attacker->defense += 1;
-  std::cout << attacker->name << " defends!" << std::endl;
+  std::cout << attacker->getName() << " defends!" << std::endl;
 }
 void Battle::moveSwap(int pokemonChoice) {
   person->currentPokemon = pokemonChoice;
-  std::cout << person->pokemon[person->currentPokemon].name
+  std::cout << person->pokemon[person->currentPokemon].getName()
             << " is now in battle!" << std::endl;
 }
 
@@ -79,8 +79,8 @@ void Battle::move(int moveChoice) {
     case 4:
       // swap
       Menu menu("choose another pokemon",
-                {person->pokemon[0].name, person->pokemon[1].name,
-                 person->pokemon[2].name});
+                {person->pokemon[0].getName(), person->pokemon[1].getName(),
+                 person->pokemon[2].getName()});
       // if the pokemon is dead, don't let them choose it
       int choice = menu.getChoice() - 1;
       if (person->pokemon[choice].health <= 0) {

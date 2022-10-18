@@ -10,8 +10,6 @@ class Person : public Player {
  public:
   std::string name;
   Person();
-  void setName(std::string name);
-  std::string getName();
 };
 
 #endif
