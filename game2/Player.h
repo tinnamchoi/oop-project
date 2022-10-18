@@ -1,23 +1,17 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include <iostream>
-#include <string>
-#include <vector>
-
-#include "Pokemon.h"
+#include "Trainer.h"
 
 using namespace std;
 
-class Player {
+class Player : public Trainer {
  public:
   // Variables
-  string name;
-  vector<Pokemon> pokemon;
   int currentPokemon;
   
-  // Printers
-  void printPokemon();
+  // Functions
+  bool swapPokemon(int);
 };
 
 #endif

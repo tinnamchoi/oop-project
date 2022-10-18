@@ -30,16 +30,15 @@ int Battle::winState() {
 }
 
 // Moves
-void Battle::moveAttack(Pokemon *attacker, Pokemon *defender) {
+int Battle::moveAttack(Pokemon *attacker, Pokemon *defender) {
   int damage = attacker->attack - defender->defense;
   if (damage <= 0) {
     damage = 1;
   }
   defender->health -= damage;
-  std::cout << attacker->getName() << " attacks " << defender->getName() << " for "
-            << damage << " damage!" << std::endl;
+  return damage;
 }
-void Battle::moveSpecial(Pokemon *attacker, Pokemon *defender) {
+int Battle::moveSpecial(Pokemon *attacker, Pokemon *defender) {
   int damage = attacker->special - defender->defense;
   // multiply or divide by 2 depending on type advantage which is represented as
   // an int if the 2 types are same
@@ -57,17 +56,77 @@ void Battle::moveSpecial(Pokemon *attacker, Pokemon *defender) {
     damage = 1;
   }
   defender->health -= damage;
-  std::cout << attacker->getName() << " uses a special attack on " << defender->getName()
-            << " for " << damage << " damage!" << std::endl;
+  return damage;
 }
-void Battle::moveDefend(Pokemon *attacker) {
-  attacker->defense += 1;
-  std::cout << attacker->getName() << " defends!" << std::endl;
-}
-void Battle::moveSwap(int pokemonChoice) {
-  person->currentPokemon = pokemonChoice;
-  std::cout << person->pokemon[person->currentPokemon].getName()
-            << " is now in battle!" << std::endl;
-}
+void Battle::moveDefend(Pokemon *attacker) { attacker->defense += 1; }
 
 // Battle
+void Battle::move(int moveChoice) {
+  switch (moveChoice) {
+    case 1:
+      cout << person->name << "'s "
+           << person->pokemon[person->currentPokemon].getName() << " attacked "
+           << computer->name << "'s "
+           << computer->pokemon[computerPokemon].getName() << " for "
+           << moveAttack(&person->pokemon[person->currentPokemon],
+                         &computer->pokemon[computerPokemon])
+           << "damage!" << endl;
+      break;
+    case 2:
+      // Print person's
+      cout << person->name << "'s "
+           << person->pokemon[person->currentPokemon].getName()
+           << " used a special attack on " << computer->name << "'s "
+           << computer->pokemon[computerPokemon].getName() << " for "
+           << moveSpecial(&person->pokemon[person->currentPokemon],
+                          &computer->pokemon[computerPokemon])
+           << "damage!" << endl;
+      break;
+    case 3:
+      moveDefend(&person->pokemon[person->currentPokemon]);
+      cout << person->name << "'s "
+           << person->pokemon[person->currentPokemon].getName() << " defended!"
+           << endl;
+      break;
+    case 4:
+      int choice;
+      person->printPokemon();
+      cout << "Which pokemon would you like to swap to?" << endl << "Number: ";
+      cin >> choice;
+      while (person->swapPokemon(choice) == false) {
+        cout << "Choose another pokemon: ";
+        cin >> choice;
+      }
+      break;
+  }
+}
+void Battle::move() {
+  // Computer's move
+  int moveChoice = rand() % 3 + 1;
+  switch (moveChoice) {
+    case 1:
+      cout << computer->name << "'s "
+           << computer->pokemon[computerPokemon].getName() << " attacked "
+           << person->name << "'s "
+           << person->pokemon[person->currentPokemon].getName() << " for "
+           << moveAttack(&computer->pokemon[computerPokemon],
+                         &person->pokemon[person->currentPokemon])
+           << "damage!" << endl;
+      break;
+    case 2:
+      cout << computer->name << "'s "
+           << computer->pokemon[computerPokemon].getName()
+           << " used a special attack on " << person->name << "'s "
+           << person->pokemon[person->currentPokemon].getName() << " for "
+           << moveSpecial(&computer->pokemon[computerPokemon],
+                          &person->pokemon[person->currentPokemon])
+           << "damage!" << endl;
+      break;
+    case 3:
+      moveDefend(&computer->pokemon[computerPokemon]);
+      cout << computer->name << "'s "
+           << computer->pokemon[computerPokemon].getName() << " defended!"
+           << endl;
+      break;
+  }
+}
