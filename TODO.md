@@ -35,5 +35,5 @@
 - [x] It runs without crashing or going into infinite loops even when the tutor attempts to break it (reasonably)
 - [x] Validates user input correctly - accepts only correct inputs.
 - [x] The end product matches your plan document accurately without many significant design changes.
-- [ ] Uses dynamic/heap memory to store a variable amount of data correctly.
-- [ ] Usefully allocates memory from the heap using `new` and is correctly freed with `delete`	
+- [x] Uses dynamic/heap memory to store a variable amount of data correctly.
+- [x] Usefully allocates memory from the heap using `new` and is correctly freed with `delete`	
