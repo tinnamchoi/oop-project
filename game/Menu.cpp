@@ -7,7 +7,14 @@ using namespace std;
 // Constructor
 Menu::Menu(string title, vector<string> options) {
   this->title = title;
-  this->options = options;
+  // put the vector of options into this->options
+  this->size = options.size();
+  // Allocate enough memory to hold the strings
+  this->options = new string[this->size];
+  for (int i = 0; i < this->size; i++) {
+    // Copy the string into the array
+    this->options[i] = options[i];
+  }
 }
 
 // Print the menu
@@ -18,7 +25,7 @@ bool Menu::printMenu() {
   cout << title << endl;
   // Print the options in 2 columns with | surrounding each option and number
   // before each option
-  for (int i = 0; i < (int)options.size(); i++) {
+  for (int i = 0; i < size; i++) {
     if (i % 2 == 0) {
       cout << "| " << i + 1 << ". " << options[i];
       // calculate the number of spaces needed to fill the table
@@ -40,7 +47,7 @@ bool Menu::printMenu() {
     }
   }
   // if there are an odd number of options, print a blank line
-  if (options.size() % 2 == 1) {
+  if (size % 2 == 1) {
     cout << "                      | " << endl;
   }
   cout << "=================================================" << endl;
@@ -52,7 +59,7 @@ bool Menu::printMenu() {
 int Menu::getChoice() {
   int choice;
   while ((this->printMenu() && !(cin >> choice)) || choice < 0 ||
-         choice > (int)options.size()) {
+         choice > size) {
     cin.clear();  // clear bad input flag
     cin.ignore(numeric_limits<streamsize>::max(),
                '\n');  // discard input
