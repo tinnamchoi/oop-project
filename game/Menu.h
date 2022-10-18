@@ -15,8 +15,6 @@ class Menu {
 
   bool printMenu();
   int getChoice();
-  
-  void printDivider();
 };
 
 #endif
