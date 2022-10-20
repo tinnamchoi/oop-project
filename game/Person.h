@@ -6,6 +6,7 @@
 class Person : public Player {
  public:
   Person();
+  Person(std::string name);
 };
 
 #endif
