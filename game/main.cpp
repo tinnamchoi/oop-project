@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+#include <fstream>
 #include <iostream>
 #include <string>
 
@@ -19,6 +20,23 @@ int main() {
 
   // Create a Person object
   Person person;
+
+  // Ask if want to load backup file
+  cout << "Do you want to load a backup file? (y/n)" << endl;
+  char load;
+  cin >> load;
+  if (load == 'y') {
+    // Load backup file
+    cout << "Loading backup file..." << endl;
+    ifstream backup("backup.txt");
+    string name;
+    backup >> person.name;
+  } else {
+    // Create a new player
+    cout << "What is your name?" << endl;
+    cin >> person.name;
+  }
+
   cout << "Welcome, " << person.name << endl;
 
   // Get choices of the person
