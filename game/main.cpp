@@ -18,70 +18,81 @@ using namespace std;
 int main() {
   srand(time(NULL));
 
-  // Create a Person object
+  // Create a person object
   Person person;
 
   // Ask if want to load backup file
-  cout << "Do you want to load a backup file? (y/n)" << endl;
+  cout << "Do you want to load a backup file? (y/n)";
   char load;
   cin >> load;
+  int landmark = 0;
   if (load == 'y') {
     // Load backup file
     cout << "Loading backup file..." << endl;
     ifstream backup("backup.txt");
     string name;
-    backup >> person.name;
+    backup >> name;
+    cout << name << endl;
+    person.setName(name);
+    int id;
+    int level;
+    for (int i = 0; i < 3; i++) {
+      backup >> id;
+      cout << id << endl;
+      person.pokemon.push_back(Pokemon());
+      person.pokemon[i].newPokemon(id);
+      backup >> level;
+      cout << level << endl;
+      for (int j = level - 1; j > 0; j--) {
+        person.pokemon[i].levelUp();
+      }
+    }
+    backup >> landmark;
+    cout << landmark << endl;
+    backup.close();
   } else {
     // Create a new player
-    cout << "What is your name?" << endl;
-    cin >> person.name;
+    Person person;
+    
+    // Get choices of the person
+    int choice;
+    Menu menu("Choose 3 Pokemon. Enter 0 to check information",
+              {"Chilli-Dog", "Water-Bear", "Lettuce-Man", "HotShot",
+               "Ice-Ice-Baby", "Leaf-Me-Alone"});
+    for (int i = 0; i < 3; i++) {
+      while (true) {
+        choice = menu.getChoice();
+        switch (choice) {
+          case 0: {
+            // Display information
+            Player player;
+            player.name = "Professor Oak";
+            for (int i = 0; i < 6; i++) {
+              player.pokemon.push_back(Pokemon());
+              player.pokemon[i].newPokemon(i);
+            }
+            player.printPokemon();
+            break;
+          }
+          case 1 ... 6:
+            // add pokemon to person's pokemon array
+            person.pokemon.push_back(Pokemon());
+            person.pokemon[i].newPokemon(choice - 1);
+            goto chose;
+        }
+      }
+    chose:;
+    }
+    menu.~Menu();
   }
 
   cout << "Welcome, " << person.name << endl;
-
-  // Get choices of the person
-  int choice;
-  Menu menu("Choose 3 Pokemon. Enter 0 to check information",
-            {"Chilli-Dog", "Water-Bear", "Lettuce-Man", "HotShot",
-             "Ice-Ice-Baby", "Leaf-Me-Alone"});
-  for (int i = 0; i < 3; i++) {
-    while (true) {
-      choice = menu.getChoice();
-      switch (choice) {
-        case 0: {
-          // Display information
-          Player player;
-          player.name = "Professor Oak";
-          player.pokemon.push_back(Pokemon());
-          player.pokemon[0].newPokemon(0);
-          player.pokemon.push_back(Pokemon());
-          player.pokemon[1].newPokemon(1);
-          player.pokemon.push_back(Pokemon());
-          player.pokemon[2].newPokemon(2);
-          player.pokemon.push_back(Pokemon());
-          player.pokemon[3].newPokemon(3);
-          player.pokemon.push_back(Pokemon());
-          player.pokemon[4].newPokemon(4);
-          player.pokemon.push_back(Pokemon());
-          player.pokemon[5].newPokemon(5);
-          player.printPokemon();
-          break;
-        }
-        case 1 ... 6:
-          // add pokemon to person's pokemon array
-          person.pokemon.push_back(Pokemon());
-          person.pokemon[i].newPokemon(choice - 1);
-          goto chose;
-      }
-    }
-  chose:;
-  }
 
   // Print the person's pokemon
   person.printPokemon();
 
   // Main loop
-  for (int i = 0; i < 10; i++) {
+  for (int i = landmark; i < 10; i++) {
     // Create a Computer object
     Computer computer(i);
     cout << "You are at " << computer.name << endl;
@@ -97,6 +108,7 @@ int main() {
               {person.pokemon[0].getName(), person.pokemon[1].getName(),
                person.pokemon[2].getName()});
     int choice = menu.getChoice();
+    menu.~Menu();
     person.swapPokemon(choice - 1);
 
     // Battle loop
@@ -105,6 +117,7 @@ int main() {
       // Create a BattleMenu object
       BattleMenu battleMenu;
       battle.move(battleMenu.getChoice());
+      battleMenu.~BattleMenu();
       battle.move();
       winState = battle.winState();
       if (person.pokemon[person.currentPokemon].health <= 0) {

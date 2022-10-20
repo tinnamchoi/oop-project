@@ -65,7 +65,7 @@ void Pokemon::resetStats() {
 void Pokemon::levelUp() {
   level++;
   experience = 0;
-  // Multiply stats by 2
+  // Increment stats by 2
   baseHealth += 2;
   health += 2;
   attack += 2;

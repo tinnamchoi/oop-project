@@ -6,7 +6,8 @@
 class Person : public Player {
  public:
   Person();
-  Person(std::string name);
+  void setName();
+  void setName(std::string name);
 };
 
 #endif

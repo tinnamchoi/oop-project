@@ -21,3 +21,7 @@ computer:
 battle:
 	g++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Computer.cpp Battle.cpp battleDriver.cpp
 	./a.out
+	
+backup:
+	g++ -std=c++11 -Wall backupDriver.cpp
+	./a.out

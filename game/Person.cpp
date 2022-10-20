@@ -1,7 +1,8 @@
 #include "Person.h"
 
-Person::Person() {
+Person::Person() {}
+void Person::setName() {
   cout << "Enter your name: ";
   cin >> name;
 }
-Person::Person(std::string name) { this->name = name; }
+void Person::setName(std::string name) { this->name = name; }
