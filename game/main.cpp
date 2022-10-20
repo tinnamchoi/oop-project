@@ -32,23 +32,19 @@ int main() {
     ifstream backup("backup.txt");
     string name;
     backup >> name;
-    cout << name << endl;
     person.setName(name);
     int id;
     int level;
     for (int i = 0; i < 3; i++) {
       backup >> id;
-      cout << id << endl;
       person.pokemon.push_back(Pokemon());
       person.pokemon[i].newPokemon(id);
       backup >> level;
-      cout << level << endl;
       for (int j = level - 1; j > 0; j--) {
         person.pokemon[i].levelUp();
       }
     }
     backup >> landmark;
-    cout << landmark << endl;
     backup.close();
   } else {
     // Create a new player
@@ -85,7 +81,7 @@ int main() {
     }
     menu.~Menu();
   }
-
+  
   cout << "Welcome, " << person.name << endl;
 
   // Print the person's pokemon
@@ -108,7 +104,6 @@ int main() {
               {person.pokemon[0].getName(), person.pokemon[1].getName(),
                person.pokemon[2].getName()});
     int choice = menu.getChoice();
-    menu.~Menu();
     person.swapPokemon(choice - 1);
 
     // Battle loop
@@ -126,8 +121,10 @@ int main() {
       }
       person.printPokemon();
       computer.printPokemon();
+      cout << winState << endl;
     }
     battle.resetStats();
+    menu.~Menu();
   }
 
   return 0;

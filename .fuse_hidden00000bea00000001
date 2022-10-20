@@ -1,0 +1,1547 @@
+Script started on 2022-10-20 20:00:42+10:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="182" LINES="19"]
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+make: *** [Makefile:3: make] Segmentation fault (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+[01m[KMenu.cpp:[m[K In constructor ‚Äò[01m[KMenu::Menu(std::string, std::vector<std::__cxx11::basic_string<char> >)[m[K‚Äô:
+[01m[KMenu.cpp:11:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‚Äò[01m[Kint[m[K‚Äô and ‚Äò[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K‚Äô {aka ‚Äò[01m[Klong unsigned int[m[K‚Äô} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   11 |   for (int i = 0; [01;35m[Ki < options.size()[m[K; i++) this->options[i] = options[i];
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+./a.out
+Enter your name: Deez
+Welcome, Deez
+make: *** [Makefile:3: make] Segmentation fault (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ gdb ./a.out
+[?2004l[35;1mGNU gdb (GDB) 12.1[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-pc-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m./a.out[m...
+[?2004h(gdb) run
+[?2004lStarting program: [32m/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game/a.out[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/usr/lib/libthread_db.so.1[m".
+Enter your name: Deez
+Welcome, Deez
+
+Program received signal SIGSEGV, Segmentation fault.
+[34m0x00007ffff7b6c7c8[m in [33m??[m () from [32m/usr/lib/libc.so.6[m
+[?2004h[?2004l[?2004h(gdb) Quit
+[?2004l[?2004h(gdb) [?2004l
+quit
+[?2004hA debugging session is active.
+
+	Inferior 1 [process 169475] will be killed.
+
+Quit anyway? (y or n) [?2004lEOF [assumed Y]
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ gdb ./a.out[7Pmake
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+make: *** [Makefile:3: make] Segmentation fault (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ gdb ./a.out
+[?2004l[35;1mGNU gdb (GDB) 12.1[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-pc-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m./a.out[m...
+[?2004h(gdb) run
+[?2004lStarting program: [32m/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game/a.out[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/usr/lib/libthread_db.so.1[m".
+Enter your name: Deez
+Welcome, Deez
+
+Program received signal SIGSEGV, Segmentation fault.
+[34m0x00007ffff7b6c7c8[m in [33m??[m () from [32m/usr/lib/libc.so.6[m
+[?2004h[?2004l[?2004h(gdb) run
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) y
+[?2004lStarting program: [32m/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game/a.out[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/usr/lib/libthread_db.so.1[m".
+Enter your name: Deez
+Welcome, Deez
+
+Program received signal SIGSEGV, Segmentation fault.
+[34m0x00007ffff7b6c7c8[m in [33m??[m () from [32m/usr/lib/libc.so.6[m
+[?2004h[?2004l[?2004h(gdb) [?2004l
+quit
+[?2004hA debugging session is active.
+
+	Inferior 1 [process 170454] will be killed.
+
+Quit anyway? (y or n) [?2004lEOF [assumed Y]
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ gdb ./a.out[7Pmake
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1.                    |                       | 
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+make: *** [Makefile:3: make] Segmentation fault (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: sldkfjsldkfj
+Welcome, sldkfjsldkfj
+make: *** [Makefile:3: make] Segmentation fault (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ sudo pacman - [KS valgring[Kd
+[?2004l[sudo] password for timothy: 
+[?25lresolving dependencies...
+looking for conflicting packages...
+
+Packages (3) debuginfod-0.187-2  libmicrohttpd-0.9.75-1  valgrind-3.19.0-5
+
+Total Download Size:   11.76 MiB
+Total Installed Size:  87.06 MiB
+
+:: Proceed with installation? [Y/n] [?25h
+[?25l:: Retrieving packages...
+ valgrind-3.19.0-5-x86_64
+ Total (0/3)                                                                        0.0   B  0.00   B/s 00:00 [-----------------------------------------------------------------]   0%
+[2F valgrind-3.19.0-5-x86_64                                                          14.4 KiB  0.00   B/s --:-- [-----------------------------------------------------------------]   0%[1E Total (0/3)                                                                       14.4 KiB  0.00   B/s --:-- [-----------------------------------------------------------------]   0%[1F valgrind-3.19.0-5-x86_64                                                           2.4 MiB  3.66 MiB/s 00:02 [#############----------------------------------------------------]  21%[1E Total (0/3)                                                                        2.4 MiB  3.66 MiB/s 00:02 [#############----------------------------------------------------]  20%[1F valgrind-3.19.0-5-x86_64                                                           5.6 MiB  7.76 MiB/s 00:00 [###############################----------------------------------]  49%[1E Total (0/3)                                                                        5.6 MiB  7.76 MiB/s 00:00 [##############################-----------------------------------]  47%[1F valgrind-3.19.0-5-x86_64                                                           7.5 MiB  8.23 MiB/s 00:00 [##########################################-----------------------]  65%[1E Total (0/3)                                                                        7.5 MiB  8.23 MiB/s 00:00 [########################################-------------------------]  63%[1F valgrind-3.19.0-5-x86_64                                                           9.3 MiB  8.58 MiB/s 00:00 [####################################################-------------]  81%[1E Total (0/3)                                                                        9.3 MiB  8.58 MiB/s 00:00 [###################################################--------------]  79%[1F valgrind-3.19.0-5-x86_64                                                          11.4 MiB  9.39 MiB/s 00:01 [#################################################################] 100%[1E libmicrohttpd-0.9.75-1-x86_64
+ Total (1/3)                                                                        9.3 MiB  8.58 MiB/s 00:00 [###################################################--------------]  79%
+[2F libmicrohttpd-0.9.75-1-x86_64                                                     14.4 KiB  0.00   B/s --:-- [###--------------------------------------------------------------]   6% libmicrohttpd-0.9.75-1-x86_64                                                    236.1 KiB  7.68 MiB/s 00:00 [#################################################################] 100%[1E debuginfod-0.187-2-x86_64
+ Total (2/3)                                                                        9.3 MiB  8.58 MiB/s 00:00 [###################################################--------------]  79%
+[2F debuginfod-0.187-2-x86_64                                                         14.4 KiB  0.00   B/s --:-- [######-----------------------------------------------------------]  10%[1E Total (2/3)                                                                       11.7 MiB  9.64 MiB/s 00:00 [################################################################-]  99%[1F debuginfod-0.187-2-x86_64                                                        131.1 KiB  3.20 MiB/s 00:00 [#################################################################] 100%[1E Total (3/3)                                                                       11.8 MiB  8.84 MiB/s 00:01 [#################################################################] 100%
+(0/3) checking keys in keyring                                                                                [-----------------------------------------------------------------]   0%(1/3) checking keys in keyring                                                                                [#####################--------------------------------------------]  33%(2/3) checking keys in keyring                                                                                [##########################################-----------------------]  66%(3/3) checking keys in keyring                                                                                [#################################################################] 100%
+(0/3) checking package integrity                                                                              [-----------------------------------------------------------------]   0%(1/3) checking package integrity                                                                              [-----------------------------------------------------------------]   1%(2/3) checking package integrity                                                                              [#----------------------------------------------------------------]   3%(3/3) checking package integrity                                                                              [#################################################################] 100%
+(0/3) loading package files                                                                                   [-----------------------------------------------------------------]   0%(1/3) loading package files                                                                                   [-----------------------------------------------------------------]   1%(2/3) loading package files                                                                                   [#----------------------------------------------------------------]   3%(3/3) loading package files                                                                                   [#################################################################] 100%
+(0/3) checking for file conflicts                                                                             [-----------------------------------------------------------------]   0%(1/3) checking for file conflicts                                                                             [#####################--------------------------------------------]  33%(2/3) checking for file conflicts                                                                             [##########################################-----------------------]  66%(3/3) checking for file conflicts                                                                             [#################################################################] 100%
+(0/3) checking available disk space                                                                           [-----------------------------------------------------------------]   0%(1/3) checking available disk space                                                                           [#####################--------------------------------------------]  33%(2/3) checking available disk space                                                                           [##########################################-----------------------]  66%(3/3) checking available disk space                                                                           [#################################################################] 100%
+:: Processing package changes...
+(1/3) installing libmicrohttpd                                                                                [-----------------------------------------------------------------]   0%(1/3) installing libmicrohttpd                                                                                [#################################################################] 100%
+(2/3) installing debuginfod                                                                                   [-----------------------------------------------------------------]   0%(2/3) installing debuginfod                                                                                   [#################################################################] 100%
+Optional dependencies for debuginfod
+    elfutils=0.187: for translations
+(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [-----------------------------------------------------------------]   0%(3/3) installing valgrind                                                                                     [###################################################--------------]  79%(3/3) installing valgrind                                                                                     [#################################################################] 100%
+Optional dependencies for valgrind
+    lib32-glibc: 32-bit ABI support [installed]
+:: Running post-transaction hooks...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Updating the info directory file...
+[?25h]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ valrg[K[Kgrind ./a.u[Kout
+[?2004l==175542== Memcheck, a memory error detector
+==175542== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==175542== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==175542== Command: ./a.out
+==175542== 
+
+valgrind:  Fatal error at startup: a function redirection
+valgrind:  which is mandatory for this platform-tool combination
+valgrind:  cannot be set up.  Details of the redirection are:
+valgrind:  
+valgrind:  A must-be-redirected function
+valgrind:  whose name matches the pattern:      strlen
+valgrind:  in an object with soname matching:   ld-linux-x86-64.so.2
+valgrind:  was not found whilst processing
+valgrind:  symbols from the object with soname: ld-linux-x86-64.so.2
+valgrind:  
+valgrind:  Possible fixes: (1, short term): install glibc's debuginfo
+valgrind:  package on this machine.  (2, longer term): ask the packagers
+valgrind:  for your Linux distribution to please in future ship a non-
+valgrind:  stripped ld.so (or whatever the dynamic linker .so is called)
+valgrind:  that exports the above-named function using the standard
+valgrind:  calling conventions for this platform.  The package you need
+valgrind:  to install for fix (1) is called
+valgrind:  
+valgrind:    On Debian, Ubuntu:                 libc6-dbg
+valgrind:    On SuSE, openSuSE, Fedora, RHEL:   glibc-debuginfo
+valgrind:  
+valgrind:  Note that if you are debugging a 32 bit process on a
+valgrind:  64 bit system, you will need a corresponding 32 bit debuginfo
+valgrind:  package (e.g. libc6-dbg:i386).
+valgrind:  
+valgrind:  Cannot continue -- exiting now.  Sorry.
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ [K[timothy@archSilver game]$ valgrind ./a.out[1@s[1@u[1@d[1@o[1@ 
+[?2004l==175748== Memcheck, a memory error detector
+==175748== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==175748== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==175748== Command: ./a.out
+==175748== 
+
+valgrind:  Fatal error at startup: a function redirection
+valgrind:  which is mandatory for this platform-tool combination
+valgrind:  cannot be set up.  Details of the redirection are:
+valgrind:  
+valgrind:  A must-be-redirected function
+valgrind:  whose name matches the pattern:      strlen
+valgrind:  in an object with soname matching:   ld-linux-x86-64.so.2
+valgrind:  was not found whilst processing
+valgrind:  symbols from the object with soname: ld-linux-x86-64.so.2
+valgrind:  
+valgrind:  Possible fixes: (1, short term): install glibc's debuginfo
+valgrind:  package on this machine.  (2, longer term): ask the packagers
+valgrind:  for your Linux distribution to please in future ship a non-
+valgrind:  stripped ld.so (or whatever the dynamic linker .so is called)
+valgrind:  that exports the above-named function using the standard
+valgrind:  calling conventions for this platform.  The package you need
+valgrind:  to install for fix (1) is called
+valgrind:  
+valgrind:    On Debian, Ubuntu:                 libc6-dbg
+valgrind:    On SuSE, openSuSE, Fedora, RHEL:   glibc-debuginfo
+valgrind:  
+valgrind:  Note that if you are debugging a 32 bit process on a
+valgrind:  64 bit system, you will need a corresponding 32 bit debuginfo
+valgrind:  package (e.g. libc6-dbg:i386).
+valgrind:  
+valgrind:  Cannot continue -- exiting now.  Sorry.
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ pacman -F [7mld-linux-x86-64.so.2[27mld-linux-x86-64.so.2
+[?2004lwarning: database file for 'multilib' does not exist (use '-Fy' to download)
+[?25lcore/glibc 2.35-6 [installed: 2.36-3]
+    usr/lib/ld-linux-x86-64.so.2
+[?25h]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ sudo pamcna[K[K[K[Kcna[K[Kman -S 2.35-6
+[?2004lerror: target not found: 2.35-6
+[?25l[?25h]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ sudo pacman -S 2.35-6[K[K[K[K[K [K[Kglibc
+[?2004l[?25lresolving dependencies...
+looking for conflicting packages...
+
+Packages (1) glibc-2.36-6
+
+Total Download Size:    9.85 MiB
+Total Installed Size:  47.36 MiB
+Net Upgrade Size:       0.02 MiB
+
+:: Proceed with installation? [Y/n] [?25h
+[?25l:: Retrieving packages...
+ glibc-2.36-6-x86_64
+[1F glibc-2.36-6-x86_64                                                               14.4 KiB  0.00   B/s --:-- [-----------------------------------------------------------------]   0% glibc-2.36-6-x86_64                                                                2.4 MiB  3.83 MiB/s 00:01 [###############--------------------------------------------------]  24% glibc-2.36-6-x86_64                                                                5.2 MiB  7.13 MiB/s 00:00 [#################################--------------------------------]  52% glibc-2.36-6-x86_64                                                                7.6 MiB  8.83 MiB/s 00:00 [##################################################---------------]  77% glibc-2.36-6-x86_64                                                                9.5 MiB  9.02 MiB/s 00:00 [##############################################################---]  96% glibc-2.36-6-x86_64                                                                9.8 MiB  2.45 MiB/s 00:04 [#################################################################] 100%[1E(0/1) checking keys in keyring                                                                                [-----------------------------------------------------------------]   0%(1/1) checking keys in keyring                                                                                [#################################################################] 100%
+(0/1) checking package integrity                                                                              [-----------------------------------------------------------------]   0%(1/1) checking package integrity                                                                              [#################################################################] 100%
+(0/1) loading package files                                                                                   [-----------------------------------------------------------------]   0%(1/1) loading package files                                                                                   [#################################################################] 100%
+(0/1) checking for file conflicts                                                                             [-----------------------------------------------------------------]   0%(1/1) checking for file conflicts                                                                             [#################################################################] 100%
+(0/1) checking available disk space                                                                           [-----------------------------------------------------------------]   0%(1/1) checking available disk space                                                                           [#################################################################] 100%
+:: Processing package changes...
+(1/1) upgrading glibc                                                                                         [-----------------------------------------------------------------]   0%(1/1) upgrading glibc                                                                                         [#################################################################] 100%
+warning: /etc/locale.gen installed as /etc/locale.gen.pacnew
+Generating locales...
+^[[A^[[A  en_US.UTF-8... done
+  en_US.UTF-8... done
+Generation complete.
+:: Running post-transaction hooks...
+(1/4) Reloading system manager configuration...
+(2/4) Creating temporary files...
+(3/4) Arming ConditionNeedsUpdate...
+(4/4) Updating the info directory file...
+[?25h]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ sudo pacman -S glibc2.35-6pacman -F ld-linux-x86-64.so.2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Psudo valgrind ./a.out
+[?2004l==177198== Memcheck, a memory error detector
+==177198== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==177198== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==177198== Command: ./a.out
+==177198== 
+
+valgrind:  Fatal error at startup: a function redirection
+valgrind:  which is mandatory for this platform-tool combination
+valgrind:  cannot be set up.  Details of the redirection are:
+valgrind:  
+valgrind:  A must-be-redirected function
+valgrind:  whose name matches the pattern:      strlen
+valgrind:  in an object with soname matching:   ld-linux-x86-64.so.2
+valgrind:  was not found whilst processing
+valgrind:  symbols from the object with soname: ld-linux-x86-64.so.2
+valgrind:  
+valgrind:  Possible fixes: (1, short term): install glibc's debuginfo
+valgrind:  package on this machine.  (2, longer term): ask the packagers
+valgrind:  for your Linux distribution to please in future ship a non-
+valgrind:  stripped ld.so (or whatever the dynamic linker .so is called)
+valgrind:  that exports the above-named function using the standard
+valgrind:  calling conventions for this platform.  The package you need
+valgrind:  to install for fix (1) is called
+valgrind:  
+valgrind:    On Debian, Ubuntu:                 libc6-dbg
+valgrind:    On SuSE, openSuSE, Fedora, RHEL:   glibc-debuginfo
+valgrind:  
+valgrind:  Note that if you are debugging a 32 bit process on a
+valgrind:  64 bit system, you will need a corresponding 32 bit debuginfo
+valgrind:  package (e.g. libc6-dbg:i386).
+valgrind:  
+valgrind:  Cannot continue -- exiting now.  Sorry.
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ [7mecho $DEBUGINFOD_URLS[27mecho $DEBUGINFOD_URLS
+[?2004l
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ ^[[200~echo $DEBUGINFOD_URLS~[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P[1P[1P[C[1P[1P[1P[1P[1P[1P[1P $DEBUGINFOD_URLS~[1P$DEBUGINFOD_URLS~[1PDEBUGINFOD_URLS~[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K=[7m"/etc/profile.d/debuginfod.sh"[27m"/etc/profile.d/debuginfod.sh"
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ DEBUGINFOD_URLS="/etc/profile.d/debuginfod.sh"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pecho $DEBUGINFOD_URLSsudo valgrind ./a.out
+[?2004l==177692== Memcheck, a memory error detector
+==177692== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==177692== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==177692== Command: ./a.out
+==177692== 
+
+valgrind:  Fatal error at startup: a function redirection
+valgrind:  which is mandatory for this platform-tool combination
+valgrind:  cannot be set up.  Details of the redirection are:
+valgrind:  
+valgrind:  A must-be-redirected function
+valgrind:  whose name matches the pattern:      strlen
+valgrind:  in an object with soname matching:   ld-linux-x86-64.so.2
+valgrind:  was not found whilst processing
+valgrind:  symbols from the object with soname: ld-linux-x86-64.so.2
+valgrind:  
+valgrind:  Possible fixes: (1, short term): install glibc's debuginfo
+valgrind:  package on this machine.  (2, longer term): ask the packagers
+valgrind:  for your Linux distribution to please in future ship a non-
+valgrind:  stripped ld.so (or whatever the dynamic linker .so is called)
+valgrind:  that exports the above-named function using the standard
+valgrind:  calling conventions for this platform.  The package you need
+valgrind:  to install for fix (1) is called
+valgrind:  
+valgrind:    On Debian, Ubuntu:                 libc6-dbg
+valgrind:    On SuSE, openSuSE, Fedora, RHEL:   glibc-debuginfo
+valgrind:  
+valgrind:  Note that if you are debugging a 32 bit process on a
+valgrind:  64 bit system, you will need a corresponding 32 bit debuginfo
+valgrind:  package (e.g. libc6-dbg:i386).
+valgrind:  
+valgrind:  Cannot continue -- exiting now.  Sorry.
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ [7msource "/etc/profile.d/debuginfod.sh"[27m
+
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csource "/etc/profile.d/debuginfod.sh"
+
+[A
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ [7msource "/etc/profile.d/debuginfod.sh"[27m
+
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csource "/etc/profile.d/debuginfod.sh"
+
+[A
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ 
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ source "/etc/profile.d/debuginfod.sh"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pudo valgrind ./a.out
+[?2004l==177879== Memcheck, a memory error detector
+==177879== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==177879== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==177879== Command: ./a.out
+==177879== 
+
+valgrind:  Fatal error at startup: a function redirection
+valgrind:  which is mandatory for this platform-tool combination
+valgrind:  cannot be set up.  Details of the redirection are:
+valgrind:  
+valgrind:  A must-be-redirected function
+valgrind:  whose name matches the pattern:      strlen
+valgrind:  in an object with soname matching:   ld-linux-x86-64.so.2
+valgrind:  was not found whilst processing
+valgrind:  symbols from the object with soname: ld-linux-x86-64.so.2
+valgrind:  
+valgrind:  Possible fixes: (1, short term): install glibc's debuginfo
+valgrind:  package on this machine.  (2, longer term): ask the packagers
+valgrind:  for your Linux distribution to please in future ship a non-
+valgrind:  stripped ld.so (or whatever the dynamic linker .so is called)
+valgrind:  that exports the above-named function using the standard
+valgrind:  calling conventions for this platform.  The package you need
+valgrind:  to install for fix (1) is called
+valgrind:  
+valgrind:    On Debian, Ubuntu:                 libc6-dbg
+valgrind:    On SuSE, openSuSE, Fedora, RHEL:   glibc-debuginfo
+valgrind:  
+valgrind:  Note that if you are debugging a 32 bit process on a
+valgrind:  64 bit system, you will need a corresponding 32 bit debuginfo
+valgrind:  package (e.g. libc6-dbg:i386).
+valgrind:  
+valgrind:  Cannot continue -- exiting now.  Sorry.
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ sudo valgrind ./a.outource "/etc/profile.d/debuginfod.sh"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pudo valgrind ./a.outDEBUGINFOD_URLS="/etc/profile.d/debuginfod.sh"[C[C[C[C[CScript started on 2022-10-20 20:26:30+10:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="207" LINES="18"]
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git add *
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git commit -m "added heap usage"
+[?2004l[master 294f12b] added heap usage
+ 4 files changed, 17 insertions(+), 6 deletions(-)
+ create mode 100644 game/vgcore.4359
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ push
+[?2004lEnter passphrase for key '/home/timothy/.ssh/id_rsa': 
+Enumerating objects: 12, done.
+Counting objects:   8% (1/12)Counting objects:  16% (2/12)Counting objects:  25% (3/12)Counting objects:  33% (4/12)Counting objects:  41% (5/12)Counting objects:  50% (6/12)Counting objects:  58% (7/12)Counting objects:  66% (8/12)Counting objects:  75% (9/12)Counting objects:  83% (10/12)Counting objects:  91% (11/12)Counting objects: 100% (12/12)Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects:  14% (1/7)Compressing objects:  28% (2/7)Compressing objects:  42% (3/7)Compressing objects:  57% (4/7)Compressing objects:  71% (5/7)Compressing objects:  85% (6/7)Compressing objects: 100% (7/7)Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects:  85% (6/7), 1.29 MiB | 976.00 KiB/sWriting objects: 100% (7/7), 1.29 MiB | 976.00 KiB/sWriting objects: 100% (7/7), 2.30 MiB | 1.46 MiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
+To github.com:tinnamchoi/oop-project.git
+   d50498e..294f12b  master -> master
+Enter passphrase for key '/home/timothy/.ssh/id_rsa': 
+Enumerating objects: 12, done.
+Counting objects:   8% (1/12)Counting objects:  16% (2/12)Counting objects:  25% (3/12)Counting objects:  33% (4/12)Counting objects:  41% (5/12)Counting objects:  50% (6/12)Counting objects:  58% (7/12)Counting objects:  66% (8/12)Counting objects:  75% (9/12)Counting objects:  83% (10/12)Counting objects:  91% (11/12)Counting objects: 100% (12/12)Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects:  14% (1/7)Compressing objects:  28% (2/7)Compressing objects:  42% (3/7)Compressing objects:  57% (4/7)Compressing objects:  71% (5/7)Compressing objects:  85% (6/7)Compressing objects: 100% (7/7)Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects:  85% (6/7), 2.25 MiB | 2.04 MiB/sWriting objects: 100% (7/7), 2.25 MiB | 2.04 MiB/sWriting objects: 100% (7/7), 2.30 MiB | 2.07 MiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0), pack-reused 0
+To gitlab.com:tinnamchoi/oop-project.git
+   d50498e..294f12b  master -> master
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ ccd[K[Kd
+[?2004l]0;timothy@archSilver:~[?2004h[timothy@archSilver ~]$ cd -
+[?2004l/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ cd .
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ cd ..
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project[?2004h[timothy@archSilver oop-project]$ ls -a
+[?2004l.  ..  game  .git  .gitignore  plan  README.md	test.log  TODO.md  .vscode
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project[?2004h[timothy@archSilver oop-project]$ cd .git
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/.git[?2004h[timothy@archSilver .git]$ ls
+[?2004lbranches  COMMIT_EDITMSG  config  description  FETCH_HEAD  HEAD  hooks	index  info  logs  objects  ORIG_HEAD  packed-refs  refs
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/.git[?2004h[timothy@archSilver .git]$ cd index
+[?2004lbash: cd: index: Not a directory
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/.git[?2004h[timothy@archSilver .git]$ ls in[K[K[K[K[Kcat index
+[?2004lDIRC      "cI1u›-ÄcI1u›-Ä   .]™  Å§  Ë  Ë   ÷,Î—ïÏ˙ı@|ˆº™Íäj 
+.gitignore        cQÉ
+ï	¨cQÉ
+ï	¨   .d…  Å§  Ë  Ë  √\õ8óÍÃåÈKπìùôñ .vscode/settings.json     cQ∫O|PcQ∫O|P   .ci  Å§  Ë  Ë   ﬁ;Yî.Á$É%GºóŸ7ÎË£˝ 	README.md cQ∫ià8cQ∫ià8   .cm  Å§  Ë  Ë  Ââ´HY®„ù7 j‡¢C•˛+ëm TODO.md   cQ∫â0ÑcQ∫â0Ñ   .c  Å§  Ë  Ë  Q◊,”8öôSè"$ä&ÒÓ)Ñ game/Battle.cpp   cQ∫í≤‰cQ∫í≤‰   .cÖ  Å§  Ë  Ë  füŒæ∂átcK=ù˜'°´`Æ∞'ü game/Battle.h     cQ∫úÓ–cQ∫úÓ–   .cÜ  Å§  Ë  Ë   x<9~(!ˇ`á|ÏM¢v™∂hA5 game/BattleMenu.cpp       cNS^  $cNS^  $   .b-  Å§  Ë  Ë   Çê`‹ÌﬁR_<á©]∞û˛9¡ê] game/BattleMenu.h cQ∫§WLcQ∫§WL   .cá  Å§  Ë  Ë  $eÛPX[ÿÔ)HXï.∏I–éQ‡≤ game/Computer.cpp cQ∫´…cQ∫´…   .cê  Å§  Ë  Ë  õ¥¥#6º‰f…'¯r¸*IÜ√tÈ game/Computer.h   cQ∫≤ücQ∫≤ü   .cï  Å§  Ë  Ë  Z ®àtƒ0’òÑÎ;Çä˙= game/Makefile     cQ64\»8cQ64\»8   .d   Å§  Ë  Ë  ~‘d∆ÿµ8¬ù¡!(Å‰2¶ºD game/Menu.cpp     cQ ø1ËcQ ø1Ë   .dÀ  Å§  Ë  Ë  Ô[Aﬂt ÕåO‘x€x€Èr¨U game/Menu.h       cQ∫ Æ(cQ∫ Æ(   .cß  Å§  Ë  Ë   Xy•âˆ‰BÜ¨ˆØ¡˚≥bΩ⁄	 game/Person.cpp   cQ∫']‡cQ∫']‡   .c®  Å§  Ë  Ë   vRê5 oÚw’æ+¶˙Iõ¡õ game/Person.h     cQ∫.1$cQ∫.1$   .c©  Å§  Ë  Ë  àaÉ4ê}ﬁYˆTÂiÂŸÇwéçÍﬁ game/Player.cpp   cQ∫3.|cQ∫3.|   .cµ  Å§  Ë  Ë   ”Àò´-¶£†´ªûe\ÿ∂—Ü game/Player.h     cQ∫^øúcQ∫^øú   .c∂  Å§  Ë  Ë  ›©¬Æà8B7ƒcTë´+ò∫Át game/Pokemon.cpp  cQ∫ªÆ,cQ∫ªÆ,   .c∑  Å§  Ë  Ë  ‘n“¥Úπ’mñ¢´Î°÷H€∞˛í game/Pokemon.h    cQ∫ƒ∞–cQ∫ƒ∞–   .cÿ  Å§  Ë  Ë   {>0€ï{ˆiö#>u≈\ÍE†©%1 game/PokemonMenu.cpp      cQ∫–}ËcQ∫–}Ë   .c‰  Å§  Ë  Ë   ≥#à√hßúl99ŒïÎ°¶å∫sé game/PokemonMenu.h        cQ∫ÿŸ\cQ∫ÿŸ\   .cÊ  Å§  Ë  Ë  Ú˘°áﬁÇ;bÖÈ˝©PÿÂqÏÄ6 game/Trainer.cpp  cQÉ
+±çHcQÉ
+±çH   .b+  Å§  Ë  Ë  »sÓ´-Í<~fbÌ?ÉRÏÈ6» game/Trainer.h    cQY	fÎ|cQY	fÎ|   .b7  Å§  Ë  Ë 8xJLG.‘:|Jÿiøÿu^»Q;X 
+game/a.out        cQ∫
+÷cQ∫
+÷   .dB  Å§  Ë  Ë   øπ1øÔÅÛì”Îñ9˛ÑB9≤€ game/computerDriver.cpp   cQF*ñGòcQF*ñGò   .dy  Å§  Ë  Ë  
+‹Z7˚≈Ó≤CØÆì¥\ÄGÿ game/main.cpp     cQ∫#€îcQ∫#€î   .dz  Å§  Ë  Ë   Â?¨»V1(JËCàxπ9∞òﬁŸ£ game/menuDriver.cpp       cQ∫'Í@cQ∫'Í@   .d{  Å§  Ë  Ë  7qºR≠¯∂Iè^¿îƒWe…ﬁ&
+Äe game/playerDriver.cpp     cQ∫®}cQ∫®}   .d|  Å§  Ë  Ë   b¶ètÔ|ÜhCÍ∂ò>t∑¿±H≤( game/pokemonMenuDriver.cpp        cQ#
+&‡cQ#
+&‡   .b1  Å§  Ë  Ë ô  ÉrêW†œ•Êö•:'∞Ê§´ˆb‘ game/vgcore.4359  cK˙öÊ€LcK˘#1¡    .b4  Å§  Ë  Ë  'cô≤YÁÏ•{“6jw!⁄L´duc plan/media/Menu.png       cK˙ö[¸cK˘#1#ÿ   .b5  Å§  Ë  Ë ≠tä6:´∏Ç¥t¶è<ﬂ∆ÿ`ÛÏ´} plan/plan.pdf     cQÉÂ*cQÉÂ*   .b6  Å§  Ë  Ë  &TØ»·K¢-Lù˛X>Tm0Ìf plan/plan.tex     cQ∫»åÑcQ∫»åÑ   .d}  Å§  Ë  Ë Çd®#ª†\¡G:∑òÜ:BK§Y∑zq test.log  TREE   ì 34 3
+Êã dP+Sp\<uŸÎÕ£ñ2:game 26 0
+…∏pÂäí|'Óæ˙ª`¢|	∂plan 3 1
+>õ˛ÖÌ∏Ÿﬂ<“”Œ1=ÔIπ^media 1 0
+ûÜE.‚•	SˆÅVü?ıT≥ÄÒL.vscode 1 0
+±¸áë ©|qp&,Ö‘Èoag∂E›ÛMeˇZ‹ˆ;'5ü‡ï ]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/.git[?2004h[timothy@archSilver .git]$ ^C[?2004l[?2004h[?2004l
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/.git[?2004h[timothy@archSilver .git]$ script[K[K[K[K[K[Kexit[K[K[K[K[?2004l
+exit
+
+Script done on 2022-10-20 20:35:18+10:30 [COMMAND_EXIT_CODE="130"]
+Script started on 2022-10-21 00:12:57+10:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="207" LINES="17"]
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+[01m[Kmain.cpp:[m[K In function ‚Äò[01m[Kint main()[m[K‚Äô:
+[01m[Kmain.cpp:43:26:[m[K [01;31m[Kerror: [m[K‚Äò[01m[Kperson[m[K‚Äô was not declared in this scope; did you mean ‚Äò[01m[KPerson[m[K‚Äô?
+   43 |   cout << "Welcome, " << [01;31m[Kperson[m[K.name << endl;
+      |                          [01;31m[K^~~~~~[m[K
+      |                          [32m[KPerson[m[K
+[01m[Kmain.cpp:93:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‚Äò[01m[KMenu::Menu(const char [37], <brace-enclosed initializer list>)[m[K‚Äô
+   93 |                person.pokemon[2].getName()}[01;31m[K)[m[K;
+      |                                            [01;31m[K^[m[K
+In file included from [01m[KBattleMenu.h:4[m[K,
+                 from [01m[Kmain.cpp:11[m[K:
+[01m[KMenu.h:18:3:[m[K [01;36m[Knote: [m[Kcandidate: ‚Äò[01m[KMenu::Menu(std::string, std::vector<std::__cxx11::basic_string<char> >)[m[K‚Äô
+   18 |   [01;36m[KMenu[m[K(string title, vector<string> options);
+      |   [01;36m[K^~~~[m[K
+[01m[KMenu.h:18:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‚Äò[01m[K<brace-enclosed initializer list>[m[K‚Äô to ‚Äò[01m[Kstd::vector<std::__cxx11::basic_string<char> >[m[K‚Äô
+   18 |   Menu(string title, [01;36m[Kvector<string> options[m[K);
+      |                      [01;36m[K~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[KMenu.h:10:7:[m[K [01;36m[Knote: [m[Kcandidate: ‚Äò[01m[KMenu::Menu(const Menu&)[m[K‚Äô
+   10 | class [01;36m[KMenu[m[K {
+      |       [01;36m[K^~~~[m[K
+[01m[KMenu.h:10:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+make: *** [Makefile:2: make] Error 1
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ ^C[?2004l[?2004h[?2004l
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Enter your name: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+/usr/bin/ld: /tmp/ccBn2tLq.o: in function `main':
+main.cpp:(.text+0x3f): undefined reference to `Person::Person()'
+/usr/bin/ld: main.cpp:(.text+0x289): undefined reference to `Person::Person()'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: make] Error 1
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 2     | 16     | 5      | 6       | 2       |
+| Error | Error | 1     | 21886  | -2008319056| 32761   | 0       |
+| Error | Error | 3     | 21890  | -2008319052| 32765   | 4       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 6     | 30     | 14     | 15      | 12      |
+| Chilli-Dog    | Fire  | 6     | 30     | 14     | 15      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Lettuce-Man        | 2. Error              |
+| 3. Error              |                       | 
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| Error | Error | 1     | 32766  | 1618144586| 32533   | 32766   |
+| Error | Error | 1     | 32766  | 1618144586| 32533   | 32766   |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 6     | 26     | 15     | 16      | 12      |
+| Lettuce-Man   | Grass | 6     | 26     | 15     | 16      | 12      |
+| Leaf-Me-Alone | Grass | 6     | 34     | 12     | 14      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Lettuce-Man        | 2. Error              |
+| 3. Error              |                       | 
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make backup
+[?2004lMakefile:26: *** missing separator.  Stop.
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make backup
+[?2004lMakefile:26: *** missing separator.  Stop.
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ ^C[?2004l[?2004h[?2004l
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make backup
+[?2004lg++ -std=c++11 -Wall backupDriver.cpp
+./a.out
+Deez
+1
+2
+3
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make backup
+[?2004lg++ -std=c++11 -Wall backupDriver.cpp
+./a.out
+Deez
+1
+2
+3
+1
+2
+3
+5
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+Deez
+1
+2
+3
+1
+2
+3
+5
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 2     | 16     | 5      | 6       | 2       |
+| Error | Error | 1     | 32567  | 839454504| 32767   | 32567   |
+| Error | Error | 3     | 32571  | 839454508| 32771   | 32571   |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Lettuce-Man        | 2. Error              |
+| 3. Error              |                       | 
+=================================================
+Enter your choice: ^[[A^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+Deez
+1
+2
+3
+1
+2
+3
+5
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git add *
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git commit =m [K[K[K-m "Backup rw implemented"
+[?2004l[master 48ddc2e] Backup rw implemented
+ 8 files changed, 91 insertions(+), 47 deletions(-)
+ create mode 100644 game/backup.txt
+ create mode 100644 game/backupDriver.cpp
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ push
+[?2004lEnumerating objects: 24, done.
+Counting objects:   4% (1/24)Counting objects:   8% (2/24)Counting objects:  12% (3/24)Counting objects:  16% (4/24)Counting objects:  20% (5/24)Counting objects:  25% (6/24)Counting objects:  29% (7/24)Counting objects:  33% (8/24)Counting objects:  37% (9/24)Counting objects:  41% (10/24)Counting objects:  45% (11/24)Counting objects:  50% (12/24)Counting objects:  54% (13/24)Counting objects:  58% (14/24)Counting objects:  62% (15/24)Counting objects:  66% (16/24)Counting objects:  70% (17/24)Counting objects:  75% (18/24)Counting objects:  79% (19/24)Counting objects:  83% (20/24)Counting objects:  87% (21/24)Counting objects:  91% (22/24)Counting objects:  95% (23/24)Counting objects: 100% (24/24)Counting objects: 100% (24/24), done.
+Delta compression using up to 12 threads
+Compressing objects:   6% (1/15)Compressing objects:  13% (2/15)Compressing objects:  20% (3/15)Compressing objects:  26% (4/15)Compressing objects:  33% (5/15)Compressing objects:  40% (6/15)Compressing objects:  46% (7/15)Compressing objects:  53% (8/15)Compressing objects:  60% (9/15)Compressing objects:  66% (10/15)Compressing objects:  73% (11/15)Compressing objects:  80% (12/15)Compressing objects:  86% (13/15)Compressing objects:  93% (14/15)Compressing objects: 100% (15/15)Compressing objects: 100% (15/15), done.
+Writing objects:   6% (1/16)Writing objects:  12% (2/16)Writing objects:  18% (3/16)Writing objects:  25% (4/16)Writing objects:  31% (5/16)Writing objects:  37% (6/16)Writing objects:  43% (7/16)Writing objects:  50% (8/16)Writing objects:  56% (9/16)Writing objects:  62% (10/16)Writing objects:  68% (11/16)Writing objects:  75% (12/16)Writing objects:  81% (13/16)Writing objects:  87% (14/16)Writing objects:  93% (15/16)Writing objects: 100% (16/16)Writing objects: 100% (16/16), 13.81 KiB | 3.45 MiB/s, done.
+Total 16 (delta 10), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/10)[Kremote: Resolving deltas:  10% (1/10)[Kremote: Resolving deltas:  20% (2/10)[Kremote: Resolving deltas:  30% (3/10)[Kremote: Resolving deltas:  40% (4/10)[Kremote: Resolving deltas:  50% (5/10)[Kremote: Resolving deltas:  60% (6/10)[Kremote: Resolving deltas:  70% (7/10)[Kremote: Resolving deltas:  80% (8/10)[Kremote: Resolving deltas:  90% (9/10)[Kremote: Resolving deltas: 100% (10/10)[Kremote: Resolving deltas: 100% (10/10), completed with 6 local objects.[K
+To github.com:tinnamchoi/oop-project.git
+   e00ca45..48ddc2e  master -> master
+To gitlab.com:tinnamchoi/oop-project.git
+ [31m! [rejected]       [m master -> master (non-fast-forward)
+[31merror: failed to push some refs to 'gitlab.com:tinnamchoi/oop-project.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git chc[Keckout HEAD_[K~4
+[?2004lerror: Your local changes to the following files would be overwritten by checkout:
+	test.log
+Please commit your changes or stash them before you switch branches.
+Aborting
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git log[K[K[K[K[K[K[Kgit add ..
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git commit -m "Backp[Kup"
+[?2004l[master 1de3f80] Backup
+ 2 files changed, 208 insertions(+), 63 deletions(-)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git checkout HEAD~4
+[?2004lNote: switching to 'HEAD~4'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e85baa6 Updated TODO.md
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Enter your name: Deez
+Welcome, Deez
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+You are at Enemy Bryan
+=======================================================================
+Enemy Bryan's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+Deez's Chilli-Dog    is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ ^C[?2004l[?2004h[?2004l
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git checkout master
+[?2004lPrevious HEAD position was e85baa6 Updated TODO.md
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)n
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 0
+=======================================================================
+Professor Oak's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 1     | 20     | 4      | 5       | 2       |
+| Water-Bear    | Water | 1     | 18     | 4      | 5       | 2       |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Ice-Ice-Baby  | Water | 1     | 20     | 2      | 5       | 2       |
+| Leaf-Me-Alone | Grass | 1     | 24     | 2      | 4       | 2       |
+=======================================================================
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ gdb ./a.uo[K[Kout
+[?2004l[35;1mGNU gdb (GDB) 12.1[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-pc-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m./a.out[m...
+[?2004h(gdb) run
+[?2004lStarting program: [32m/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game/a.out[m 
+[?2004h
+This GDB supports auto-downloading debuginfo from the following URLs:
+https://debuginfod.archlinux.org 
+Enable debuginfod for this session? (y or [n]) y
+[?2004lDebuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/usr/lib/libthread_db.so.1[m".
+Do you want to load a backup file? (y/n)n
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+munmap_chunk(): invalid pointer
+
+Program received signal SIGABRT, Aborted.
+[33m__pthread_kill_implementation[m ([36mthreadid[m=<optimized out>, [36msigno=signo@entry[m=6, [36mno_tid=no_tid@entry[m=0) at [32mpthread_kill.c[m:44
+Downloading 0.00 MB source file [32m/usr/src/debug/glibc/nptl/pthread_kill.c[m
+[###########################################################################################                                                                                                                 ][############################################################################################################################################################################################################]                                                                                                                                                                                                              44	      [01;34mreturn[m [01mINTERNAL_SYSCALL_ERROR_P[m [31m([mret[31m)[m [31m?[m [01mINTERNAL_SYSCALL_ERRNO[m [31m([mret[31m)[m [31m:[m [35m0[m[31m;[m
+[?2004h[?2004l[?2004h(gdb) [?2004l
+quit
+[?2004hA debugging session is active.
+
+	Inferior 1 [process 199649] will be killed.
+
+Quit anyway? (y or n) [?2004lEOF [assumed Y]
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ gdb ./a.out[7Pmake
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)
+n
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)n
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)n
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+Deez
+1
+2
+3
+1
+2
+3
+5
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 6     | 30     | 14     | 15      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+| Chilli-Dog    | Fire  | 6     | 30     | 14     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+Deez
+1
+2
+3
+1
+2
+3
+5
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 6     | 30     | 14     | 15      | 12      |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+| Chilli-Dog    | Fire  | 6     | 30     | 14     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: tis swell
+1
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Leaf-Me-Alone | Grass | 6     | 34     | 12     | 14      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+| Leaf-Me-Alone | Grass | 6     | 34     | 12     | 14      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+wtf!
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ ^C[?2004l[?2004h[?2004l
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+| Chilli-Dog    | Fire  | 6     | 30     | 14     | 15      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+Deez's Water-Bear    is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Regina's Ice-Ice-Baby  for 1 damage!
+Enemy Regina's Ice-Ice-Baby  used a special attack on Deez's Water-Bear    for 11 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 9      | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 6     | 29     | 12     | 15      | 12      |
+| Chilli-Dog    | Fire  | 6     | 30     | 14     | 15      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+=======================================================================
+make: *** [Makefile:3: make] Segmentation fault (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ gdb a.out
+[?2004l[35;1mGNU gdb (GDB) 12.1[m
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-pc-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32ma.out[m...
+[?2004h(gdb) run
+[?2004lStarting program: [32m/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game/a.out[m 
+[?2004h
+This GDB supports auto-downloading debuginfo from the following URLs:
+https://debuginfod.archlinux.org 
+Enable debuginfod for this session? (y or [n]) 
+[?2004lDebuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/usr/lib/libthread_db.so.1[m".
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+Deez's Water-Bear    is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 1
+Deez's Water-Bear    attacked Enemy Regina's Water-Bear    for 1 damage!
+Enemy Regina's Water-Bear    defended!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 6     | 27     | 14     | 15      | 13      |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+=======================================================================
+
+Program received signal SIGSEGV, Segmentation fault.
+[34m0x00007ffff7aafb99[m in [33mfree[m () from [32m/usr/lib/libc.so.6[m
+[?2004h[?2004l[?2004h(gdb) Quit
+[?2004l[?2004h(gdb) [?2004l
+quit
+[?2004hA debugging session is active.
+
+	Inferior 1 [process 204777] will be killed.
+
+Quit anyway? (y or n) [?2004lEOF [assumed Y]
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ gdb a.out[5Pmake
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 6     | 26     | 15     | 16      | 12      |
+| Lettuce-Man   | Grass | 6     | 26     | 15     | 16      | 12      |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+Deez's Water-Bear    is now in battle!
+debyg
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Regina's Lettuce-Man   for 1 damage!
+Enemy Regina's Lettuce-Man   used a special attack on Deez's Water-Bear    for 24 damage!
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 3
+Deez's Lettuce-Man   is now in battle!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | -4     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 6     | 25     | 15     | 16      | 12      |
+| Lettuce-Man   | Grass | 6     | 26     | 15     | 16      | 12      |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+=======================================================================
+make: *** [Makefile:3: make] Segmentation fault (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ ^C[?2004l[?2004h[?2004l
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)
+y
+Loading backup file...
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+Deez's Water-Bear    is now in battle!
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 1
+Deez's Water-Bear    attacked Enemy Regina's Water-Bear    for 1 damage!
+Enemy Regina's Water-Bear    attacked Deez's Water-Bear    for 10 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 10     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 6     | 27     | 14     | 15      | 12      |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+=======================================================================
+0
+make: *** [Makefile:3: make] Segmentation fault (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+Deez's Water-Bear    is now in battle!
+What do you want to do?
+=================================================
+Battle Menu
+| 1. Attack             | 2. Special            |
+| 3. Defend             | 4. Swap               |
+=================================================
+Enter your choice: 2
+Deez's Water-Bear    used a special attack on Enemy Regina's HotShot       for 1 damage!
+Enemy Regina's HotShot       attacked Deez's Water-Bear    for 8 damage!
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 12     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| HotShot       | Fire  | 6     | 29     | 12     | 14      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+=======================================================================
+0
+make: *** [Makefile:3: make] Segmentation fault (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)n
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 1
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 2
+=================================================
+Choose 3 Pokemon. Enter 0 to check information
+| 1. Chilli-Dog         | 2. Water-Bear         |
+| 3. Lettuce-Man        | 4. HotShot            |
+| 5. Ice-Ice-Baby       | 6. Leaf-Me-Alone      |
+=================================================
+Enter your choice: 3
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+[01m[KMenu.cpp:72:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‚Äò[01m[KMenu::~Menu()[m[K‚Äô
+   72 | [01;31m[KMenu[m[K::~Menu() { delete[] options; }
+      | [01;31m[K^~~~[m[K
+In file included from [01m[KMenu.cpp:1[m[K:
+[01m[KMenu.h:27:3:[m[K [01;36m[Knote: [m[K‚Äò[01m[KMenu::~Menu()[m[K‚Äô previously defined here
+   27 |   [01;36m[K~[m[KMenu() {}
+      |   [01;36m[K^[m[K
+make: *** [Makefile:2: make] Error 1
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+tis swell
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9  

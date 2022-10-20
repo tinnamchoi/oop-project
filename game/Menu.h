@@ -12,7 +12,7 @@ class Menu {
   // Variables
   string title;
   string* options;  // Vector of string options for the menu
-  int size;                     // Number of options in menu
+  int size;         // Number of options in menu
 
   // Constructor
   Menu(string title, vector<string> options);
@@ -24,7 +24,7 @@ class Menu {
   int getChoice();
 
   // Destructor
-  ~Menu() { delete options; }
+  ~Menu() { delete[] options; }
 };
 
 #endif
