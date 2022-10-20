@@ -488,3 +488,210 @@ game/a.out        cQ�
 exit
 
 Script done on 2022-10-20 20:35:18+10:30 [COMMAND_EXIT_CODE="130"]
+Script started on 2022-10-21 00:12:57+10:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="207" LINES="17"]
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+[01m[Kmain.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kmain.cpp:43:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kperson[m[K’ was not declared in this scope; did you mean ‘[01m[KPerson[m[K’?
+   43 |   cout << "Welcome, " << [01;31m[Kperson[m[K.name << endl;
+      |                          [01;31m[K^~~~~~[m[K
+      |                          [32m[KPerson[m[K
+[01m[Kmain.cpp:93:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMenu::Menu(const char [37], <brace-enclosed initializer list>)[m[K’
+   93 |                person.pokemon[2].getName()}[01;31m[K)[m[K;
+      |                                            [01;31m[K^[m[K
+In file included from [01m[KBattleMenu.h:4[m[K,
+                 from [01m[Kmain.cpp:11[m[K:
+[01m[KMenu.h:18:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMenu::Menu(std::string, std::vector<std::__cxx11::basic_string<char> >)[m[K’
+   18 |   [01;36m[KMenu[m[K(string title, vector<string> options);
+      |   [01;36m[K^~~~[m[K
+[01m[KMenu.h:18:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >[m[K’
+   18 |   Menu(string title, [01;36m[Kvector<string> options[m[K);
+      |                      [01;36m[K~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[KMenu.h:10:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMenu::Menu(const Menu&)[m[K’
+   10 | class [01;36m[KMenu[m[K {
+      |       [01;36m[K^~~~[m[K
+[01m[KMenu.h:10:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+make: *** [Makefile:2: make] Error 1
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ ^C[?2004l[?2004h[?2004l
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Enter your name: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+/usr/bin/ld: /tmp/ccBn2tLq.o: in function `main':
+main.cpp:(.text+0x3f): undefined reference to `Person::Person()'
+/usr/bin/ld: main.cpp:(.text+0x289): undefined reference to `Person::Person()'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: make] Error 1
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 2     | 16     | 5      | 6       | 2       |
+| Error | Error | 1     | 21886  | -2008319056| 32761   | 0       |
+| Error | Error | 3     | 21890  | -2008319052| 32765   | 4       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Chilli-Dog    | Fire  | 6     | 30     | 14     | 15      | 12      |
+| Chilli-Dog    | Fire  | 6     | 30     | 14     | 15      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Lettuce-Man        | 2. Error              |
+| 3. Error              |                       | 
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 1     | 16     | 5      | 6       | 2       |
+| Error | Error | 1     | 32766  | 1618144586| 32533   | 32766   |
+| Error | Error | 1     | 32766  | 1618144586| 32533   | 32766   |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 6     | 26     | 15     | 16      | 12      |
+| Lettuce-Man   | Grass | 6     | 26     | 15     | 16      | 12      |
+| Leaf-Me-Alone | Grass | 6     | 34     | 12     | 14      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Lettuce-Man        | 2. Error              |
+| 3. Error              |                       | 
+=================================================
+Enter your choice: ^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make backup
+[?2004lMakefile:26: *** missing separator.  Stop.
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make backup
+[?2004lMakefile:26: *** missing separator.  Stop.
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ ^C[?2004l[?2004h[?2004l
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make backup
+[?2004lg++ -std=c++11 -Wall backupDriver.cpp
+./a.out
+Deez
+1
+2
+3
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make backup
+[?2004lg++ -std=c++11 -Wall backupDriver.cpp
+./a.out
+Deez
+1
+2
+3
+1
+2
+3
+5
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+Deez
+1
+2
+3
+1
+2
+3
+5
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Lettuce-Man   | Grass | 2     | 16     | 5      | 6       | 2       |
+| Error | Error | 1     | 32567  | 839454504| 32767   | 32567   |
+| Error | Error | 3     | 32571  | 839454508| 32771   | 32571   |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Lettuce-Man        | 2. Error              |
+| 3. Error              |                       | 
+=================================================
+Enter your choice: ^[[A^Cmake: *** [Makefile:3: make] Interrupt
+
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ make
+[?2004lg++ -std=c++11 -Wall Pokemon.cpp Trainer.cpp Player.cpp Person.cpp Menu.cpp Computer.cpp BattleMenu.cpp Battle.cpp main.cpp
+./a.out
+Do you want to load a backup file? (y/n)y
+Loading backup file...
+Deez
+1
+2
+3
+1
+2
+3
+5
+Welcome, Deez
+=======================================================================
+Deez's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 2     | 20     | 6      | 7       | 4       |
+| HotShot       | Fire  | 1     | 20     | 2      | 4       | 2       |
+| Lettuce-Man   | Grass | 3     | 20     | 9      | 10      | 6       |
+=======================================================================
+You are at Enemy Regina
+=======================================================================
+Enemy Regina's Pokemon: 
+| Name          | Type  | Level | Health | Attack | Special | Defense |
+| ------------- | ----- | ----- | ------ | ------ | ------- | ------- |
+| Water-Bear    | Water | 6     | 28     | 14     | 15      | 12      |
+| Ice-Ice-Baby  | Water | 6     | 30     | 12     | 15      | 12      |
+| HotShot       | Fire  | 6     | 30     | 12     | 14      | 12      |
+=======================================================================
+=================================================
+Choose a Pokemon to start the battle
+| 1. Water-Bear         | 2. HotShot            |
+| 3. Lettuce-Man        |                       | 
+=================================================
+Enter your choice: 1
+munmap_chunk(): invalid pointer
+make: *** [Makefile:3: make] Aborted (core dumped)
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git add *
+[?2004l]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ git commit =m [K[K[K-m "Backup rw implemented"
+[?2004l[master 48ddc2e] Backup rw implemented
+ 8 files changed, 91 insertions(+), 47 deletions(-)
+ create mode 100644 game/backup.txt
+ create mode 100644 game/backupDriver.cpp
+]0;timothy@archSilver:/run/media/timothy/Elements-1/0_Files/Documents/Repositories/oop-project/game[?2004h[timothy@archSilver game]$ push
+[?2004lEnumerating objects: 24, done.
+Counting objects:   4% (1/24)Counting objects:   8% (2/24)Counting objects:  12% (3/24)Counting objects:  16% (4/24)Counting objects:  20% (5/24)Counting objects:  2
