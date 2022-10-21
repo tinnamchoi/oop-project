@@ -49,7 +49,7 @@ int main() {
   } else {
     // Create a new player
     Person person;
-    
+
     // Get choices of the person
     int choice;
     Menu menu("Choose 3 Pokemon. Enter 0 to check information",
@@ -81,7 +81,7 @@ int main() {
     }
     menu.~Menu();
   }
-  
+
   cout << "Welcome, " << person.name << endl;
 
   // Print the person's pokemon
@@ -108,11 +108,10 @@ int main() {
 
     // Battle loop
     int winState = battle.winState();
+    BattleMenu battleMenu;
     while (winState == 0) {
       // Create a BattleMenu object
-      BattleMenu battleMenu;
       battle.move(battleMenu.getChoice());
-      battleMenu.~BattleMenu();
       battle.move();
       winState = battle.winState();
       if (person.pokemon[person.currentPokemon].health <= 0) {
@@ -121,9 +120,9 @@ int main() {
       }
       person.printPokemon();
       computer.printPokemon();
-      cout << winState << endl;
     }
     battle.resetStats();
+    battleMenu.~BattleMenu();
     menu.~Menu();
   }
 
