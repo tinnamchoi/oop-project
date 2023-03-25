@@ -1,4 +1,6 @@
 *.aux
 *.log
 *.toc
+*.out
+backup.txt
 .vscode
